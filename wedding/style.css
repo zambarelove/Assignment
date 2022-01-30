@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+
+@font-face {
+    font-family: railway-600;
+    src: url('./assets/fonts/railway/Raleway/Raleway-Medium.ttf');
+}
+
+/* header css start here */
+    header{
+        width: 100%;
+        height: 850px;
+        overflow: hidden;
+        position: relative;
+    }
+    .navbar{
+        width: 100%;
+        height: 100px;
+        z-index: 2;
+        background-color: transparent;
+    }
+    .navbar-nav li a{
+        font-size: 13px;
+        line-height: 24px;
+        color: #2b2b2b;
+        font-family: railway-600;
+    }
+    #slider{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+/* header css end here */
+
+/* 2 banner container css start here */
+    #banner{
+        width: 100%;
+        height: 500px;
+    }
+    .grid-banner{
+        min-height: 470px;
+        position: relative;
+    }
+    #banner .item-1{
+        width: 300px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 100px;
+        background-image: url('./assets/images/2nd-section-img/2.1.png');
+        background-repeat: round;
+    }
+    #banner .item-1 h3{
+        font-size: 88px;
+        letter-spacing: -4px;
+        margin-left: 16px;
+        margin-bottom: 110px;
+        line-height: 90px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: railway-600;
+    }
+    #banner .item-1 h3 span{
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+    .inner-slider{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    #banner .item-1 p{
+        position: absolute;
+        top: 320px;
+        left: 50px;
+        background-color: rgba(220,64,44,0);
+        border: 4px solid #ffffff;
+        font-size: 9px;
+        letter-spacing: 3px;
+        line-height: 29px;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    #banner .item-2{
+        width: 390px;
+        height: 230px;
+        position: absolute;
+        top: 0;
+        left: 410px;
+        background-image: url('./assets/images/2nd-section-img/2.2.png');
+        background-repeat: round;
+    }
+    #banner .item-2 h4{
+        position: absolute;
+        top: 80px;
+        left: 70px;
+        font-size: 15px;
+        letter-spacing: 5px;
+        line-height: 69px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: railway-600;
+    }
+    #banner .item-2 p{
+        position: absolute;
+        top: 120px;
+        left: 150px;
+        font-size: 15px;
+        line-height: 69px;
+        color: #ffffff;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";
+    }
+
+    #banner .item-3{
+        width: 220px;
+        height: 230px;
+        position: absolute;
+        top: 0;
+        left: 810px;
+        background-image: url('./assets/images/2nd-section-img/2.3.png');
+        background-repeat: no-repeat;
+    }
+    #banner .item-3 p{
+        position: absolute;
+        top: 130px;
+        left: 50px;
+        font-size: 15px;
+        letter-spacing: 5px;
+        line-height: 69px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "Raleway";
+    }
+    #banner .item-3 img{
+        position: absolute;
+        top: 90px;
+        left: 80px;
+    }
+
+    #banner .item-4{
+        width: 390px;
+        height: 230px;
+        position: absolute;
+        top: 240px;
+        left: 410px;
+        background-image: url('./assets/images/2nd-section-img/2.4.png');
+        background-repeat: round;
+    }
+    #banner .item-4 h4{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 15px;
+        letter-spacing: 5px;
+        line-height: 69px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: railway-600;
+    }
+    #banner .item-4 p{
+        position: absolute;
+        top: 80px;
+        left: 100px;
+        font-size: 15px;
+        line-height: 69px;
+        color: #ffffff;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";
+    }
+
+    #banner .item-5{
+        width: 220px;
+        height: 230px;
+        position: absolute;
+        top: 240px;
+        left: 810px;
+        background-color: #acacac;
+        background-repeat: round;
+    }
+    #banner .item-5 .para-1{
+        position: absolute;
+        top: 50px;
+        left: 25px;
+        font-size: 15px;
+        letter-spacing: 5px;
+        line-height: 69px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: railway-600;
+        
+    }
+    #banner .item-5 .para-2{
+        position: absolute;
+        top: 80px;
+        left: 70px;
+        font-size: 15px;
+        line-height: 69px;
+        color: #ffffff;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";
+    }
+    .secound-slider-first-slide h3{
+        font-size: 88px;
+        letter-spacing: -4px;
+        line-height: 69px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: railway-600;
+    }
+/* 2 banner container css end here */
+
+/* 3 popular-product css start here */
+    .section{
+        padding-top: 50px;
+    }
+    #popular-product{
+        width: 100%;
+        min-height: 650px;
+        position: relative;
+        padding-bottom: 100px;
+    }
+    #popular-product h2{
+        font-size: 30px;
+        line-height: 110px;
+        color: #303030;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";
+        text-align: center;
+    }
+    #popular-product ul li a{
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 110px;
+        color: #7a4a4b;
+        font-weight: 500;
+        font-family: "Raleway";
+    }
+    #popular-product .product-card{
+        width: 270px;
+        height: 450px;
+        position: relative;
+        background-color: #F8F8F8;
+    }
+    #popular-product .product-card .hover-info{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-align: center;
+        display: none;
+    }
+    #popular-product .product-card:hover .hover-info{
+        display: block;
+    }
+    #popular-product .product-card .hover-info .add-cart{
+        display: inline-block;
+        background-color: black;
+        margin-top: 50px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 50px;
+        color: #ffffff;
+        font-weight: 500;
+        padding: 0 50px;
+        font-family: railway-600;
+        text-decoration: none;
+    }
+    #popular-product .product-card .hover-info ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    .star .fa-star {
+        color: yellow;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: -50px;
+    }
+/* 3 popular product cdd end here */
+
+/* 4 jumbotron container start here */
+    #jumbotron-1{
+        width: 100%;
+        height: 400px;
+        background-image: url('./assets/images/jumbotron-1/salebanner-bg.png');
+        position: relative;
+    }
+    #jumbotron-1 .jumbo-info{
+        position: absolute;
+        top: 150px;
+        left: 190px;
+        text-align: center;
+    }
+    #jumbotron-1 .jumbo-info p{
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #303030;
+        font-weight: 300;
+        font-family: railway-600;
+    }
+    #jumbotron-1 .jumbo-info h4{
+        font-size: 72px;
+        color: #303030;
+        font-weight: 300;
+        font-family: railway-600;
+    }
+    #jumbotron-1 .jumbo-info .shop-now{
+        background-color: black;
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: railway-600;
+        text-align: center;
+        padding: 10px;
+        width: 190px;
+height: 55px;
+    }
+/* 4 jumbotron container start here */
+
+
+/* 5 sservice container start here */
+    #services-container{
+        width: 100%;
+        min-height: 350px;
+        padding-top: 40px;
+    }
+    #services-container .service{
+        margin-top: 30px;
+        text-align: center;
+    }
+    #services-container .service h4{
+        font-size: 14px;
+        letter-spacing: 2px;
+        line-height: 24px;
+        color: #292929;
+        font-weight: 600;
+        text-align: center;
+        font-family: railway-600;
+    }
+    #services-container .service p{
+        width: 270px;
+        height: 110px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #515151;
+        font-weight: 500;
+        font-family: railway-600;
+        text-align: center;
+    }
+/* 5 services containerr end here */
+
+/* 6 black jumbotron container start here */
+    #jumbotron-2{
+        width: 100%;
+        min-height: 300px;
+        background-color: #2e2e2e;
+        text-align: center;
+    }
+    #jumbotron-2 h4{
+        margin-top: 80px;
+        margin-bottom: 40px;
+        font-size: 36px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";
+        text-align: center;
+    }
+/* 6 black jumbotron container end here */
+
+/* 7 container css start here */
+    #best-sale-product{
+        width: 100%;
+        height: 800px;
+        text-align: center;
+    }
+    .section-head{
+        text-align: center;
+    }
+    #best-sale-product .section-head h3{
+        font-size: 30px;
+        line-height: 110px;
+        color: #303030;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";
+    }
+    #best-sale-product .nav-path{
+        padding-left: 350px;
+    }
+    #best-sale-product .nav-path li{
+        margin: 0px 5px;
+    }
+    #best-sale-product .nav-path li a{
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 110px;
+        color: #7a4a4b;
+        font-weight: 500;
+
+    }
+    .best-product .best-product-info{
+        text-align: left;
+    }
+    .best-product .best-product-info h5{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #303030;
+        font-weight: 500;
+        font-family: railway-600;
+    }
+    .best-product .best-product-info h4{
+        font-size: 18px;
+        line-height: 110px;
+        color: #7a4a4b;
+        font-weight: 500;
+        font-family: railway-600;
+    }
+/* 7 container css end here */
