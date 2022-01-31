@@ -29,6 +29,7 @@
         font-size: 13px;
         line-height: 24px;
         color: #2b2b2b;
+        font-weight: 600;
         font-family: railway-600;
     }
     #slider{
@@ -286,6 +287,7 @@
         list-style: none;
         display: flex;
         justify-content: center;
+        margin: 25px 0px;
     }
     .star .fa-star {
         color: yellow;
@@ -296,7 +298,7 @@
     }
 /* 3 popular product cdd end here */
 
-/* 4 jumbotron container start here */
+/* 4 jumbotron-1 container start here */
     #jumbotron-1{
         width: 100%;
         height: 400px;
@@ -336,10 +338,10 @@
         width: 190px;
 height: 55px;
     }
-/* 4 jumbotron container start here */
+/* 4 jumbotron-1 container start here */
 
 
-/* 5 sservice container start here */
+/* 5 service container start here */
     #services-container{
         width: 100%;
         min-height: 350px;
@@ -391,16 +393,16 @@ height: 55px;
     }
 /* 6 black jumbotron container end here */
 
-/* 7 container css start here */
+/* 7 best sell container start here */
     #best-sale-product{
         width: 100%;
         height: 800px;
         text-align: center;
     }
-    .section-head{
+    #best-sale-product .section-head{
         text-align: center;
     }
-    #best-sale-product .section-head h3{
+    #best-sale-product .section-head h2{
         font-size: 30px;
         line-height: 110px;
         color: #303030;
@@ -442,3 +444,302 @@ height: 55px;
         font-family: railway-600;
     }
 /* 7 container css end here */
+
+/* 8 shop by collection jumbotron start here */
+    #jumbotron-3 .section-head h3{
+        font-size: 30px;
+        letter-spacing: -1px;
+        line-height: 110px;
+        color: #303030;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";
+        text-align: center;
+    }
+    .jumbo-card-2{
+        position: relative;
+    }
+    .jumbo-card-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(122,74,75, .8);
+        padding-top: 50px;
+        display: none;
+    }
+    .jumbo-card-overlay h4{
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";
+        text-align: center;
+        margin-top: 25px;
+    }
+    .jumbo-card-overlay p{
+        width: 352px;
+        height: 78px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Raleway";
+        text-align: center;
+        margin: 25px 0px;
+    }
+    .jumbo-card-overlay a{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Raleway";
+        text-align: center;
+        text-decoration: none;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid #e8e8e8;
+        padding: 7px 15px;
+    }
+    .jumbo-card-2:hover .jumbo-card-overlay{
+        display: block;
+    }
+/* 8 shop by collection jumbotron end here */
+
+/* 9 buy container start here */
+    #buy-container .product-name{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 10px;
+        color: #303030;
+        font-weight: 500;
+        font-family: railway-600;
+    }
+    #buy-container .product-price{
+        font-size: 18px;
+        line-height:35px;
+        color: #7a4a4b;
+        font-weight: 500;
+        font-family: railway-600;
+        margin-bottom: 10px;
+    }
+    .buy-product-card .add-cart-9{
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #303030;
+        font-weight: 500;
+        font-family: railway-600;
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid #e8e8e8;
+    }
+    #buy-container .banner{
+        position: relative;
+        text-align: center;
+    }
+    #buy-container .banner h4{
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        font-size: 30px;
+        line-height: 110px;
+        color: #ffffff;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";
+    }
+    #buy-container .banner p{
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        font-size: 12px;
+        letter-spacing: 4px;
+        line-height: 110px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "Raleway";
+    }
+/* 9 buy container end here */
+
+/* 10 jumbotron-4 container start here */
+    #jumbotron-4 {
+        position: relative;
+    }
+    #jumbotron-4 .jumbotron-4-info{
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        text-align: center;
+    }
+    #jumbotron-4 .jumbotron-4-info h3{
+        font-size: 60px;
+        letter-spacing: 3px;
+        color: #141414;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";
+        text-align: center;
+    }
+    #jumbotron-4 .jumbotron-4-info p{
+        font-size: 24px;
+        letter-spacing: 8px;
+        line-height: 60px;
+        color: #141414;
+        font-weight: 600;
+        font-family: railway-600;
+    }
+    #jumbotron-4 .jumbotron-4-info a{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #ffffff;
+        background-color: black;
+        font-weight: 500;
+        font-family:  railway-600;
+        text-align: center;
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+/* 10 jumbotron-4 container end here */
+
+
+
+/* all device media quries start here */
+    @media screen and (max-width:1326px) {
+     
+    }
+
+    @media screen and (max-width:1280px) {
+        
+    }
+
+    @media screen and (max-width:1024px) {
+        
+    }
+    @media screen and (max-width:992px) {
+        
+    }
+    @media screen and (max-width:768px) {
+        /* 3 popular product container start here */
+        #popular-product {
+            padding-bottom: 10px;
+        }
+        #popular-product .section-head h2{
+            line-height: 70px;
+            margin-bottom: 0px;
+        }
+        #popular-product ul li a{
+            line-height: 60px;
+        }
+        /* 3 popular product container end here */
+
+        /* 4 jumbotron container start here */
+            #jumbotron-1{
+                width: 100%;
+                height: 400px;
+                background-image: url('./assets/images/jumbotron-1/salebanner-bg.png');
+                position: relative;
+                background-position: center;
+            }
+            #jumbotron-1 .jumbo-info{
+                position: absolute;
+                top: 110px;
+                left: 10px;
+                text-align: center;
+            }
+            #jumbotron-1 .jumbo-info p{
+                font-size: 15px;
+                letter-spacing: 0;
+            }
+            #jumbotron-1 .jumbo-info h4{
+                font-size: 44px;
+                margin-bottom: 40px;
+            }
+        /* 4 jumbotron container end here */
+            
+        /* 5 service container start here */
+        #services-container .service p{
+            width: 100%;
+            font-size: 12px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            color: #515151;
+            font-weight: 500;
+            font-family: railway-600;
+            text-align: center;
+        }
+        /* 5 service container end here */
+
+        /* 6 jumbotron-2 container start here */
+        #jumbotron-2 h4{
+            font-size: 24px;
+        }
+        /* 6 jumbotron-2 container end here */
+
+        /* 7 best sell co   ntainer start here */
+        #best-sale-product .section-head h2{
+            list-style: 70px;
+            margin-bottom: 0;
+        }
+        #best-sale-product .nav-path{
+            padding-left: 150px;
+            line-height: 60px;
+        }
+        /* 7 best sell container end here */
+    }
+    @media screen and (max-width:576px) {
+        /* 7 best sell product container start here */
+        #best-sale-product .nav-path{
+            padding-left: 60px;
+            line-height: 30px;
+        }
+        /* 7 best sell product container end here */
+    }
+    @media screen and (max-width:420px) {
+        /* 3 popular product container start here */
+
+        #popular-product ul li a{
+            text-decoration: none;
+            font-size: 10px;
+            letter-spacing: 1px;
+            line-height: 10px;
+            color: #7a4a4b;
+            font-weight: 500;
+        }
+        .star .fa-star{
+            margin-top: 0;
+        }
+        /* 3 popular product container end here */
+        
+        
+
+        /* 7 best sell product container start here */
+        #best-sale-product .nav-path{
+            padding-left: 0px;
+        }
+        #best-sale-product .nav-path li a{
+            font-size: 10px;
+            letter-spacing: 0px;
+            line-height: 5px;
+        }
+        /* 7 best sell product container end here */
+
+        /* 9 jumbotron-4 container start here */
+        #jumbotron-4 .jumbotron-4-info h3{
+            font-size: 16px;
+        }
+        #jumbotron-4 .jumbotron-4-info p{
+            font-size: 12px;
+        }
+        /* 9 jumbotron-4 container end here */
+    }
+    @media screen and (max-width:320px) {
+        
+    }
+    
+/* all device media quries end here */
