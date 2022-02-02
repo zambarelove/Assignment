@@ -17,7 +17,7 @@ a:hover{
 /* header css start here */
     header{
         width: 100%;
-        min-height: 750px;
+        min-height: 440px;
         overflow: hidden;
         position: relative;
         background-image: url('./assets/images/jumbotron-1/salebanner-bg.png');
