@@ -81,7 +81,7 @@
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 25px;
     left: auto;
 }
 .slick-prev:before
@@ -124,7 +124,7 @@
 
     display: block;
 
-    width: 100%;
+    width: 80%;
     padding: 0;
 
     list-style: none;
@@ -137,9 +137,9 @@
 
     display: inline-block;
 
-    width: 20px;
+    width: 10px;
     height: 20px;
-    margin: 0 10px;
+    margin: 0 15px;
     padding: 0;
 
     cursor: pointer;
@@ -151,10 +151,10 @@
 
     display: inline-block;
 
-    width: 20px;
+    width: 10px;
     height: 20px;
-    padding: 5px;
-    margin: 0 20px;
+    padding: 0px;
+    margin: 0 15px;
     cursor: pointer;
 
     color: transparent;

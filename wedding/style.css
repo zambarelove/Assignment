@@ -6,7 +6,9 @@
     border: 0;
     outline: 0;
 }
-
+a:hover{
+    color: black;
+}
 @font-face {
     font-family: railway-600;
     src: url('./assets/fonts/railway/Raleway/Raleway-Medium.ttf');
@@ -15,9 +17,13 @@
 /* header css start here */
     header{
         width: 100%;
-        height: 850px;
+        min-height: 750px;
         overflow: hidden;
         position: relative;
+        background-image: url('./assets/images/jumbotron-1/salebanner-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
     .navbar{
         width: 100%;
@@ -32,29 +38,73 @@
         font-weight: 600;
         font-family: railway-600;
     }
-    #slider{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
+    .shopping-btn{
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #2b2b2b;
+        font-weight: 500;
+        font-family: "Raleway";
+        border: 2px solid #e2e2e2;
     }
 /* header css end here */
 
 /* 2 banner container css start here */
-    #banner{
+    .inner-slider{
+        position: relative;
+    }
+    .inner-slider .responsive{
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        right: 0;
+        padding-left: 10px;
         width: 100%;
-        height: 500px;
+        height: 100%;
+    }
+    .inner-slider .responsive .slide-1{
+        width: 100%;
+        margin-left: 40px;
+        box-sizing: border-box;
+    }
+    .slide-1 h4{
+        font-size: 42px;
+        color: #ffffff;
+    }
+    .slide-1 h4 span{
+        font-size: 12px;
+    }
+    .slide-1 p{
+        width: 230px;
+        color: #ffffff;
+        padding: 5px;
+        border: 2px solid #ffffff;
+    }
+    .girl{
+        position: relative;
+    }
+    .girl h6{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+    }
+    .girl p{
+        position: absolute;
+        top: 130px;
+        left: 100px;
+    }
+    
+    /* ;
     }
     .grid-banner{
         min-height: 470px;
         position: relative;
+        display: flex;
     }
     #banner .item-1{
         width: 300px;
         height: 100%;
-        position: absolute;
-        top: 0;
-        left: 100px;
+        
         background-image: url('./assets/images/2nd-section-img/2.1.png');
         background-repeat: round;
     }
@@ -94,9 +144,7 @@
     #banner .item-2{
         width: 390px;
         height: 230px;
-        position: absolute;
-        top: 0;
-        left: 410px;
+   
         background-image: url('./assets/images/2nd-section-img/2.2.png');
         background-repeat: round;
     }
@@ -126,9 +174,6 @@
     #banner .item-3{
         width: 220px;
         height: 230px;
-        position: absolute;
-        top: 0;
-        left: 810px;
         background-image: url('./assets/images/2nd-section-img/2.3.png');
         background-repeat: no-repeat;
     }
@@ -152,9 +197,6 @@
     #banner .item-4{
         width: 390px;
         height: 230px;
-        position: absolute;
-        top: 240px;
-        left: 410px;
         background-image: url('./assets/images/2nd-section-img/2.4.png');
         background-repeat: round;
     }
@@ -184,9 +226,6 @@
     #banner .item-5{
         width: 220px;
         height: 230px;
-        position: absolute;
-        top: 240px;
-        left: 810px;
         background-color: #acacac;
         background-repeat: round;
     }
@@ -220,9 +259,25 @@
         color: #ffffff;
         font-weight: 600;
         font-family: railway-600;
-    }
+    } */
 /* 2 banner container css end here */
 
+    .vintage{
+        /* position: relative; */
+        background-image: url('./assets/images/2nd-section-img/2.4.png');
+        background-size: cover;
+        padding: 150px 50px;
+    }
+    /* .vintage h6{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    .vintage p{
+        position: absolute;
+        top: 100px;
+        left: 50px;
+    } */
 /* 3 popular-product css start here */
     .section{
         padding-top: 50px;
@@ -232,6 +287,7 @@
         min-height: 650px;
         position: relative;
         padding-bottom: 100px;
+        margin-top: 100px;
     }
     #popular-product h2{
         font-size: 30px;
@@ -256,6 +312,14 @@
         height: 450px;
         position: relative;
         background-color: #F8F8F8;
+        box-sizing: border-box;
+    }
+    #popular-product .product-card .card-info{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #popular-product .product-card .card-info p{
+        margin-bottom: 5px;
     }
     #popular-product .product-card .hover-info{
         position: absolute;
@@ -267,13 +331,10 @@
         text-align: center;
         display: none;
     }
-    #popular-product .product-card:hover .hover-info{
-        display: block;
-    }
     #popular-product .product-card .hover-info .add-cart{
         display: inline-block;
-        background-color: black;
-        margin-top: 50px;
+        background-color: #303030;
+        margin-top: 120px;
         font-size: 12px;
         letter-spacing: 2px;
         line-height: 50px;
@@ -283,11 +344,23 @@
         font-family: railway-600;
         text-decoration: none;
     }
+    #popular-product .product-card:hover .hover-info{
+        display: block;
+    }
     #popular-product .product-card .hover-info ul{
         list-style: none;
         display: flex;
         justify-content: center;
-        margin: 25px 0px;
+        margin-top: 10px;
+    }
+    #popular-product .product-card .hover-info .social-icon{
+        margin-bottom: 40px;
+    }
+    #popular-product .product-card .hover-info .social-icon li a{
+        color: #ffffff;
+        padding: 10px 15px;
+        border: 1px solid #ffffff;
+        margin: 0 10px;
     }
     .star .fa-star {
         color: yellow;
@@ -607,22 +680,143 @@ height: 55px;
     }
 /* 10 jumbotron-4 container end here */
 
+/* 11 latest blog container start here */
+    #latest-blog h2{
+        font-size: 30px;
+        line-height: 110px;
+        color: #303030;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";
+    }
+    .left-side-p{
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: rgba(122,74,75,1);
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";
+    }
+    .right-side-p{
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 24px;
+        color: #515151;
+        font-weight: 500;
+        font-family: railway-600;
+    }
+    .blog-card-info h4{
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #303030;
+        font-weight: 700;
+        font-family: railway-600;
+    }
+    .blog-card-info p{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #515151;
+        font-weight: 500;
+        font-family: railway-600;
+    }
+    .blog-card-info a{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #303030;
+        font-weight: 500;
+        font-family: railway-600;
+        text-decoration: none;
+        padding: 7px 10px;
+        border: 1px solid #e8e8e8;
+    }
+/* 11 latest blog container end here */
+
+/* 12 shop by brand container start here */
+    #brand h2{
+        font-size: 30px;
+        line-height: 110px;
+        color: #303030;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Playfair Display";   
+    }
+/* 12 shop by brand container end here */
+
+/* 13 footer start here */
+    #news-letter{
+        height: 130px;
+        background-color: #7a4a4b;
+    }
+    #news-letter input{
+        width: 50%;
+        color: white;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        padding: 5px 10px;
+        margin-left: 20px;
+        position: relative;
+    }
+    #news-letter .fa-paper-plane{
+        margin-left: -100px;
+    }
+    #news-letter input::placeholder{
+        color: white;
+    }
+    #main-footer{
+        background-color: #141414;
+    }
+    #main-footer h5{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #ffffff;
+    }
+    #main-footer p{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #515151;
+    }
+    #main-footer ul li a{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        color: #515151;
+    }
+/* 13 footer end here */
+    .fa-paper-plane, 
+    .fa-phone-alt, 
+    .fa-envelope-open-text{
+        border: 1px solid #515151;
+        border-radius: 50px;
+        padding: 5px;
+        align-self: flex-start;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
 
 
 /* all device media quries start here */
-    @media screen and (max-width:1326px) {
-     
-    }
-
-    @media screen and (max-width:1280px) {
-        
-    }
-
     @media screen and (max-width:1024px) {
-        
+        #best-sale-product .nav-path{
+            padding-left: 255px;
+        }       
     }
     @media screen and (max-width:992px) {
-        
+        #jumbotron-1 .jumbo-info {
+            position: absolute;
+            top: 50px;
+            left: 190px;
+            text-align: center;
+        }
+        #best-sale-product .nav-path{
+            padding-left: 135px;
+        }       
     }
     @media screen and (max-width:768px) {
         /* 3 popular product container start here */
@@ -639,27 +833,27 @@ height: 55px;
         /* 3 popular product container end here */
 
         /* 4 jumbotron container start here */
-            #jumbotron-1{
-                width: 100%;
-                height: 400px;
-                background-image: url('./assets/images/jumbotron-1/salebanner-bg.png');
-                position: relative;
-                background-position: center;
-            }
-            #jumbotron-1 .jumbo-info{
-                position: absolute;
-                top: 110px;
-                left: 10px;
-                text-align: center;
-            }
-            #jumbotron-1 .jumbo-info p{
-                font-size: 15px;
-                letter-spacing: 0;
-            }
-            #jumbotron-1 .jumbo-info h4{
-                font-size: 44px;
-                margin-bottom: 40px;
-            }
+        #jumbotron-1{
+            width: 100%;
+            height: 400px;
+            background-image: url('./assets/images/jumbotron-1/salebanner-bg.png');
+            position: relative;
+            background-position: center;
+        }
+        #jumbotron-1 .jumbo-info{
+            position: absolute;
+            top: 110px;
+            left: 10px;
+            text-align: center;
+        }
+        #jumbotron-1 .jumbo-info p{
+            font-size: 15px;
+            letter-spacing: 0;
+        }
+        #jumbotron-1 .jumbo-info h4{
+            font-size: 44px;
+            margin-bottom: 40px;
+        }
         /* 4 jumbotron container end here */
             
         /* 5 service container start here */
@@ -716,7 +910,22 @@ height: 55px;
         }
         /* 3 popular product container end here */
         
+         /* 6 jumbotron-2 container start here */
         
+        #jumbotron-1 .jumbo-info {
+            position: absolute;
+            top: 30px;
+            left: 10px;
+            text-align: center;
+        }
+        #jumbotron-1 .jumbo-info p{
+            font-size: 12px;
+        }
+        #jumbotron-1 .jumbo-info h4{
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        /* 6 jumbotron-2 container end here */
 
         /* 7 best sell product container start here */
         #best-sale-product .nav-path{
@@ -729,14 +938,39 @@ height: 55px;
         }
         /* 7 best sell product container end here */
 
-        /* 9 jumbotron-4 container start here */
+        /* 10 jumbotron-4 container start here */
+        #jumbotron-4 .jumbotron-4-info {
+            position: absolute;
+            top: 0%;
+            left: 1%;
+            text-align: center;
+        }
         #jumbotron-4 .jumbotron-4-info h3{
             font-size: 16px;
         }
         #jumbotron-4 .jumbotron-4-info p{
             font-size: 12px;
+            line-height: 30px;
         }
-        /* 9 jumbotron-4 container end here */
+        /*  jumbotron-4 container end here */
+        
+        /* 9 buy container start here */
+        #buy-container .product-name{
+            font-size: 10px;
+            letter-spacing: 1px;
+            line-height: 10px;
+            color: #303030;
+            font-weight: 500;
+            font-family: railway-600;
+        }
+        #buy-container .product-price{
+            font-size: 18px;
+            line-height:15px;
+            color: #7a4a4b;
+            font-weight: 500;
+            font-family: railway-600;
+            margin-bottom: 10px;
+        }
     }
     @media screen and (max-width:320px) {
         
