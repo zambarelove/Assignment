@@ -24,288 +24,540 @@ a{
     font-family: montserrat-regular;
     src: url('./assets/fonts/montserrat/Montserrat-Regular.ttf');
 }
-:root{
-    --primary-color: ;
-    --secoundry-color: ;
-    --third-color: ;
-    --text-color: ;
-    --bg-color: ;
-}
-
-/* header css start here */
-
-    header{
-        width: 100%;
-        height: 540px;
-        background-image: url('./assets/images/hero-section/hero-bg.png');
-        overflow: hidden;
-    }
-    header nav{
-        width: 100%;
-        height: 70px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center; 
-    }
-    header nav #logo img{
-        width: 100px;
-    }
-    header nav #nav-link #phone a{
-        display: flex;
-        align-items: center;
-        font-size: 10px;
-        color: #3d2514;
-        font-weight: 700;
-        font-family: montserrat-bold;
-        text-align: right;
-        margin-top: -22px;
-    }
-    header nav #nav-link #phone a img{
-        width: 25px;
-    }
-    header nav #nav-link .link ul{
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    header nav #nav-link .link ul li a{
-        font-size: 12px;
-        color: #3d2514;
-        font-weight: 700;
-        font-family: BebasNeue;
+    :root{
+        --primary-color: ;
+        --secoundry-color: ;
+        --third-color: ;
+        --text-color: ;
+        --bg-color: ;
     }
 
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        background-image: url('./assets/images/hero-section/hero-bg.png');
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-        box-shadow: 0px 0px 30px black;
-    } 
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 21px;
-        letter-spacing: 4px;
-        color: #3d2514;
-        font-weight: 700;
-        display: block;
-        transition: 0.3s;
-        font-family: BebasNeue;
-    } 
-    .sidenav a:hover {
-        color: #f1f1f1;
-    }  
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 28px;
-        margin-left: 50px;
-    }
+    /* header css start here */
 
-    #hero-content{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 25px;
-    }
-    #hero-content p{
-        font-size: 12px;
-        line-height: 20px;
-        color: #3d2514;
-        font-weight: 400;
-        border: 2px dashed #3d2514;
-        margin: 5px;
-        margin-top: 30px;
-        text-align: center;
-    }
-    #hero-content h3{
-        font-size: 36px;
-        line-height: 32px;
-        color: #3d2514;
-        font-weight: 400;
-        font-family: Alfa-slab-one;
-        filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
-        margin-top: 20px;
-        text-align: center;
-    }
-    #hero-content .hero-img img{
-        width:100%;
-        position: relative;
-    }
-    #hero-content .hero-img .price-bg{
-        width: 35%;
-        padding-left: 20px;
-        position: absolute;
-        top: 350px;
-        left: 20px;
-    }
-    #hero-content .hero-img span{
-        position: absolute;
-        top: 375px;
-        left: 65px;
-        color: #fff;
-    }
-/* header css end here */
+        header{
+            width: 100%;
+            background-image: url('./assets/images/hero-section/hero-bg.png');
+        }
+        header nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding: 0 15px;
+            margin-top: 10px;
+        }
+        header nav #logo img{
+            width: 150px;
+        }
+        header #phone{
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+        header #phone span{
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #3d2514;
+            font-weight: 700;
+            font-family: montserrat-bold;
+        } 
+        header #phone span a{
+            font-size: 11px;
+            color: #3d2514;
+            font-weight: 700;
+            font-family: montserrat-bold;
+            text-align: right;
+            margin-left: 10px;
+        }
+        header #phone img{
+            width: 35px;
+            padding-right: 5px;
+        }
+        header nav #nav-link .link ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        header nav #nav-link .link ul li a{
+            font-size: 12px;
+            color: #3d2514;
+            font-weight: 700;
+            font-family: BebasNeue;
+        }
 
-/* secound banner container css start here */
-    #banner{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 10px auto;
-    }
-    .popular-burger{
-        width: 90%;
-        height: 220px;
-        text-align: center;
-        background-image: url('./assets/images/secound-section/banner-1.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        border-radius: 10px;
-    }
-    .popular-burger p{
-        font-size: 25px;
-        line-height: 30px;
-        color: #ffffff;
-        font-weight: 700;
-        font-family: BebasNeue;
-    }
-    .popular-burger h4{
-        font-size: 25px;
-        line-height: 38px;
-        color: #ffffff;
-        font-weight: 700;
-        font-family: BebasNeue;
-    }
-    .more-fun{
-        width: 90%;
-        height: 220px;
-        background-image: url('./assets/images/secound-section/landscape-1.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        border-radius: 10px;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .more-fun h4{
-        font-size: 25px;
-        line-height: 38px;
-        color: #ffffff;
-        font-weight: 700;
-        font-family: BebasNeue;
-    }
-    .more-fun p{
-        font-size: 20px;
-        line-height: 30px;
-        color: #ffffff;
-        font-weight: 700;
-        font-family: BebasNeue;
-    }
-    .fresh{
-        width: 90%;
-        height: 220px;
-        text-align: center;
-        background-image: url('./assets/images/secound-section/landscape-2.png');
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        border-radius: 10px;
-        margin: 20px auto 0 auto;
-    } 
-    .fresh p{
-        font-size: 20px;
-        line-height: 38px;
-        color: #ffffff;
-        font-weight: 700;
-        font-family: BebasNeue;
-    }
-    .fresh h4{
-        font-size: 25px;
-        line-height: 38px;
-        color: #ffffff;
-        font-weight: 700;
-        font-family: BebasNeue;
-    }
-/* secound banner continer css end here */
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-image: url('./assets/images/hero-section/hero-bg.png');
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            box-shadow: 0px 0px 30px black;
+        } 
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 21px;
+            letter-spacing: 4px;
+            color: #3d2514;
+            font-weight: 700;
+            display: block;
+            transition: 0.3s;
+            font-family: BebasNeue;
+        } 
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }  
+        #nav-open{
+            font-size: 25px;
+            display: flex;
+            justify-content: end;
+            cursor:pointer;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 28px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
 
-/* third choose & enjoy section start here */
-    #choose-section{
-        text-align: center;
-    }
-    /* .choose-info:nth-child(1){
+        #hero-content{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 25px;
+        }
+        #hero-content p{
+            font-size: 12px;
+            line-height: 18px;
+            padding: 5px;
+            color: #3d2514;
+            font-weight: 400;
+            border: 1px dashed #3d2514;
+            margin: 50px 15px 0 15px;
+            text-align: center;
+        }
+       
+        #hero-content h3{
+            font-size: 48px;
+            line-height: 36px;
+            color: #3d2514;
+            font-weight: 400;
+            font-family: Alfa-slab-one;
+            filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
+            margin-top: 20px;
+            padding-left: 12px;
+            text-align: left;
+        }
+        #hero-content h3 span{
+            font-size: 26px;
+        }
+        #hero-content .hero-img img{
+            width:100%;
+            position: relative;
+        }
+        #hero-content .hero-img .price-bg{
+            width: 35%;
+            padding-left: 20px;
+            position: absolute;
+            top: 480px;
+            left: 10px;
+        }
+        #hero-content .hero-img span{
+            position: absolute;
+            top: 510px;
+            left: 55px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 20px;
+            color: #ffffff;
+            font-weight: 500;
+            font-family: BebasNeue;
+        }
+    /* header css end here */
 
-    } */
-    .oreder-section{
-        display: flex;
-        flex-direction: column;
+    /* secound banner container css start here */
+        #banner{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 10px auto;
+        }
+        .popular-burger{
+            width: 90%;
+            height: 220px;
+            text-align: center;
+            background-image: url('./assets/images/secound-section/banner-1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 30px;
+        }
+        .popular-burger p,
+        .more-fun p,
+        .fresh p,
+        .popular-burger h4,
+        .more-fun h4,
+        .fresh h4{
+            text-shadow: 10px 0px 5px rgba(0, 0, 0, 1);
+            padding-left: 10px;
+        }
+        .more-fun{
+            width: 90%;
+            height: 220px;
+            background-image: url('./assets/images/secound-section/landscape-1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 10px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 30px;
+        }
+        .popular-burger p,
+        .more-fun p,
+        .fresh p{
+            font-size: 18px;
+            line-height: 30px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: BebasNeue;
+        }
+        .fresh{
+            width: 90%;
+            height: 220px;
+            text-align: center;
+            background-image: url('./assets/images/secound-section/landscape-2.png');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            margin: 20px auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 30px;
+        } 
+        .popular-burger h4,
+        .more-fun h4,
+        .fresh h4{
+            font-size: 25px;
+            line-height: 38px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: BebasNeue;
+        }
+    /* secound banner continer css end here */
+    .section{
+        padding-top: 30px;
     }
-    .oreder-section .oreder-1 img,
-    .oreder-section .oreder-2 img,
-    .oreder-section .oreder-3 img{
-        width: 100%;
-    }
-/* third choose & enjoy section end here */
+    /* third choose & enjoy section start here */
+        #choose-section{
+            text-align: center;
+            padding: 0px 15px;
+        }
+        .choose-info p:nth-child(1){
+            display: inline-block;
+            font-size: 24px;
+            line-height: 25px;
+            font-weight: 400;
+            font-family: BebasNeue;
+            color: #3d2514;
+            padding: 10px 15px;
+            background-color: #ffc045;
+            margin: 0px auto 15px auto;
+        }
+        .choose-info p{
+            font-size: 16px;
+            line-height: 24px;
+            color: #3d2514;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: montserrat-regular;
+        }
+        .choose-info h3{
+            font-size: 29px;
+            line-height: 48px;
+            color: #3d2514;
+            font-weight: 400;
+            font-family: Alfa-slab-one;
+        }
+        .oreder-section{
+            display: flex;
+            flex-direction: column;
+        }
+        .oreder-1, .oreder-2, .oreder-3{
+            margin: 40px 0px 20px 0px;
+        }
+        .oreder-section .oreder-1 img,
+        .oreder-section .oreder-2 img,
+        .oreder-section .oreder-3 img{
+            width: 100%;
+        }
+        .oreder-1 h3,
+        .oreder-2 h3,
+        .oreder-3 h3{
+            font-size: 38px;
+            line-height: 38px;
+            color: #3d2514;
+            font-weight: 700;
+            font-family: BebasNeue;
+        }
+        .oreder-1 p,
+        .oreder-2 p,
+        .oreder-3 p{
+            font-size: 14px;
+            line-height: 24px;
+            color: #3d2514;
+            font-weight: 100;
+            margin: 10px 0 25px 0;
+            font-family: montserrat-regular;
+        }
+        .oreder-1 a,
+        .oreder-2 a,
+        .oreder-3 a{
+            width: 195px;
+            height: 37px;
+            font-size: 17px;
+            line-height: 38px;
+            font-weight: 400;
+            color: #ffffff;
+            background-color: #bf2222;
+            font-family: Alfa Slab One;
+            display: inline-block;
+        }
+    /* third choose & enjoy section end here */
 
-/* fourth section start here */
-    #events{
-        width: 100%;
-        height: 492px;
-        margin: 20px auto 20px auto;
-        filter: drop-shadow(18.656px 24.758px 21.5px rgba(0,0,0,0.17));
-        background-color: #ffffff;
-    }
-    #events .slider{
-        display: flex;
-        flex-direction: column;
-    }
-    #events .slider .event-img img{
-        width: 100%;
-    }
-/* fourth section end here */
+    /* fourth section start here */
+        #events{
+            width: 100%;
+            height: 500px;
+            margin: 20px auto 20px auto;
+            filter: drop-shadow(18.656px 24.758px 21.5px rgba(0,0,0,0.17));
+            background-color: #ffffff;
+        }
+        #events .slider{
+            display: flex;
+            flex-direction: column;
+        }
+        #events .slider .event-info{
+            padding: 30px 20px 30px 15px;
+            text-align: center;
+        }
+        #events .slider .event-info span{
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 20px;
+            color: #3d3d3d;
+            font-weight: 400;
+            font-family: BebasNeue;
+        }
+        #events .slider .event-info h4{
+            font-size: 24px;
+            line-height: 40px;
+            color: #3d2514;
+            font-weight: 400;
+            margin-bottom: 10px;
+            font-family: Alfa-Slab-One;
+        }
+        #events .slider .event-info p{
+            font-size: 14px;
+            line-height: 20px;
+            color: #3d3d3d;
+            font-weight: 400;
+            font-family: montserrat-regular;
+        }
+        #events .slider .event-img img{
+            width: 95%;
+            margin: 0 auto;
+        }
+    /* fourth section end here */
 
-/* fifth book table section start here */
-    #book-table{
-        width: 100%;
-        height: 690px;
-        background-image: url('./assets/images/fifth-section/5.1.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-/* fifth book table section end here */
+    /* fifth book table section start here */
+        #book-table{
+            width: 100%;
+            background-image: url('./assets/images/fifth-section/5.1.png');
+            background-size: cover;
+            background-position: top right;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 30px 15px 0 15px;
+        }
 
-/* footer css start here */
-    footer{
-        width: 100%;
-        height: 525px;
-        background-image: url('./assets/images/footer-bg/footer-bg.png');
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-    }
-    footer img{
-        width: 100%;
-    }
-/* footer css end here */
+        #book-table p{
+            font-size: 22px;
+            letter-spacing: 2px;
+            line-height: 23px;
+            color: #3d2514;
+            font-weight: 400;
+            font-family: BebasNeue;
+        }
+        #book-table h4{
+            font-size: 22px;
+            letter-spacing: 2px;
+            line-height: 46px;
+            color: #3d2514;
+            font-weight: 700;
+            margin-bottom: 25px;
+            font-family: Alfa-slab-one;
+        }
+
+        #book-table form{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        #book-table form input{
+            width: 250px;
+            height: 35px;
+            padding: 25px 0px 20px 20px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-family: BebasNeue;
+            background-color: rgba(235,174,76,0);
+            border: 1px solid #636363;
+        }
+        #book-table form input::placeholder{
+            font-size: 16px;
+            line-height: 16px;
+            color: #3d3d3d;
+            font-weight: 400;
+            font-family: BebasNeue;
+        }
+        #book-table form button{
+            width: 250px;
+            height: 45px;
+            font-size: 16px;
+            line-height: 46px;
+            font-family: Alfa-slab-one;
+            color: #ffffff;
+            font-weight: 400;
+            border-radius: 5px;
+            background-color: #bf2222;
+        }
+    /* fifth book table section end here */
+
+    /* footer css start here */
+        footer{
+            width: 100%;
+            height: 525px;
+            background-image: url('./assets/images/footer-bg/footer-bg.png');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+        }
+        footer img{
+            margin: 50px auto 0 25px;
+            width: 80%;
+        }
+        footer p{
+            width: 85%;
+            font-size: 14px;
+            line-height: 20px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: montserrat-regular;
+            text-align: left;
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+        footer .contact-moblie {
+            margin-top: 25px;
+        }
+        footer .contact-moblie a{
+            font-size: 20px;
+            line-height: 38px;
+            color: #ffffff;
+            font-weight: 400;
+            display: inline-block;
+            font-family: BebasNeue;
+            margin-left: 25px;
+        }
+        footer .contact-moblie a span{
+            padding-left: 15px;
+        }
+        footer .social-link-mobile ul{
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 40px;
+        }
+        footer .social-link-mobile ul li{
+            margin: 0 20px;
+        }
+        footer .social-link-mobile li a{
+            padding: 15px;
+            border-radius: 50px;
+            background-color: white;
+        }
+        .mobile-copy-right{
+            font-size: 17px;
+            line-height: 15px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: BebasNeue;
+            margin-top: 50px;
+        }
+    /* footer css end here */
 
 /* all device media quries start here */
 
 @media screen and (min-width:576px) {
-    
+    /* header media quries start here  */
+        header nav #logo img{
+            width: 170px;
+        }
+        
+        .sidenav .closebtn {
+            font-size: 50px;
+        }
+        #nav-open{
+            font-size: 30px;
+        }
+        header #phone a img{
+            width: 40px;
+            padding-right: 5px;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 28px;
+            letter-spacing: 4px;
+            color: #3d2514;
+            font-weight: 700;
+            display: block;
+            transition: 0.3s;
+            font-family: BebasNeue;
+            margin: 30px 0px ;
+        } 
+    /* header media quries end here */
 }
 @media screen and (min-width:768px) {
   

@@ -7,10 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/fontawsome/fontawesome-free-6.0.0-beta3-web/css/all.css">
     <link rel="stylesheet" href="./style.css">
+
+    <!-- slick link start here -->
+    <link rel="stylesheet" href="./assets/slick/css/slick-css.css"/>
+    <link rel="stylesheet" href="./assets/slick/css/slick-theme-css.css"/>
+    <!-- slick link end here -->
+
 </head>
 <body>
 <!-- header section start here -->
     <header>
+        <div id="phone">
+            <img src="./assets/images/hero-section/scooter.png" alt="delivery-scooter-img"> 
+            <span> Express Delivery  <a href="#"> +1 234 567 890 </a> </span>
+        </div>
         <nav>
             <div id="logo">
                 <a href="./index.html"> 
@@ -18,9 +28,6 @@
                 </a>
             </div>
             <div id="nav-link">
-                <div id="phone">
-                    <a href="#"> <img src="./assets/images/hero-section/scooter.png" alt="delivery-scooter-img"> <span>Express Delivery +1 234 567 890</span></a>
-                </div>
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="#">Home</a>
@@ -28,14 +35,13 @@
                     <a href="#">Our Story</a>
                     <a href="#">Contact Us</a>
                   </div>
-                <span style="font-size:15px;cursor:pointer; display: flex; justify-content: end;" onclick="openNav()">&#9776;</span>
+                <span id="nav-open" onclick="openNav()">&#9776;</span>
             </div>
         </nav>
         <div id="hero-content">
             <div class="hero-info">
-                <p style="display: none;">IT IS GOOD TIME FOR THE GRATE TASTE OF BURGERS</p>
-                <h3>BURGER <span>WEEK</span> </h3>
-                <p>IT IS GOOD TIME FOR THE GRATE TASTE OF BURGERS</p>
+                <p >IT IS GOOD TIME FOR THE GRATE TASTE OF BURGERS</p>
+                <h3>BURGER <br> <span>WEEK</span> </h3>
             </div>
             <div class="hero-img">
                 <img src="./assets/images/hero-section/burger.png" alt="burger-img">
@@ -47,7 +53,7 @@
 <!-- header section end here -->
 
 <!-- secound banner container start here -->
-    <div class="container" >
+    <div class="container section">
         <div id="banner">
             <div class="popular-burger">
                 <p>TRY IT TODAY</p>
@@ -69,11 +75,10 @@
 
 <!-- third choose & enjoy container start here -->
     <div id="choose-section">
-        <div class="choose-info">
+        <div class="choose-info section">
             <p>ALWAYS TASTE BURGER</p>
             <h3>CHOOSE & ENJOY</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis officia expedita fugit dolorem ad labore sequi.
-                Impedit, maiores optio suscipit debitis qui assumenda sit libero. Itaque, sit libero? Et iusto hic perferendis.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis officia expedita fugit dolorem ad labore sequi. Impedit, maiores optio suscipit debitis qui assumenda sit libero. Itaque, sit libero? Et iusto hic perferendis.</p>
         </div>
         <div class="oreder-section">
             <div class="oreder-1">
@@ -106,34 +111,58 @@
 
 <!-- fourth upcoming event container start here -->
     <div id="events">
-        <div class="slider">
-            <div class="event-info">
-                <span>DISCOVER</span>
-                <h4>UPCOMING EVENTS</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis enim animi rerum ex, qui inventore? At suscipit
-                    odit tenetur perferendis animi vitae praesentium quae molestiae eum, facilis nisi neque repellat modi aliquam.</p>
+        <div class="slider responsive">
+            <div class="slide-1">
+                <div class="event-info">
+                    <span>DISCOVER</span>
+                    <h4>UPCOMING EVENTS</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis enim animi rerum ex, qui inventore? At suscipit
+                        odit tenetur perferendis animi vitae praesentium quae molestiae eum, facilis nisi neque repellat modi aliquam.</p>
+                </div>
+                <div class="event-img">
+                    <img src="./assets/images/fourth-section/4.1.png" alt="burger with fries">
+                </div>
             </div>
-            <div class="event-img">
-                <img src="./assets/images/fourth-section/4.1.png" alt="burger with fries">
+            <div class="slide-2">
+                <div class="event-info">
+                    <span>DISCOVER</span>
+                    <h4>UPCOMING EVENTS</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis enim animi rerum ex, qui inventore? At suscipit
+                        odit tenetur perferendis animi vitae praesentium quae molestiae eum, facilis nisi neque repellat modi aliquam.</p>
+                </div>
+                <div class="event-img">
+                    <img src="./assets/images/fourth-section/4.1.png" alt="burger with fries">
+                </div>
+            </div>
+            <div class="slide-3">
+                <div class="event-info">
+                    <span>DISCOVER</span>
+                    <h4>UPCOMING EVENTS</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis enim animi rerum ex, qui inventore? At suscipit
+                        odit tenetur perferendis animi vitae praesentium quae molestiae eum, facilis nisi neque repellat modi aliquam.</p>
+                </div>
+                <div class="event-img">
+                    <img src="./assets/images/fourth-section/4.1.png" alt="burger with fries">
+                </div>
             </div>
         </div>
     </div>
 <!-- fourth upcoming event container end here -->
 
 <!-- fifth book table container start here -->
-    <div id="book-table">
+    <div id="book-table" class="section">
         <p>RESERVATION</p>
         <h4>BOOK YOUR TABLE</h4>
 
         <form action="">
             <div class="left-side">
                 <input type="text" placeholder="NAME"> <br>
-                <input type="text" name="date" placeholder="DATE">
+                <input type="text" name="date" placeholder="DATE"><br>
                 <input type="text" name="people" placeholder="PEOPLE">
             </div>
              <div class="right-side">
-                 <input type="email" name="emali" placeholder="EMAIL">
-                 <input type="text" name="time" placeholder="TIME">
+                 <input type="email" name="emali" placeholder="EMAIL"><br>
+                 <input type="text" name="time" placeholder="TIME"><br>
                  <button type="submit">FIND A TABLE</button>
              </div>
         </form>
@@ -143,24 +172,94 @@
 <!-- sixth footer section start here -->
     <footer>
         <img src="./assets/images/footer-bg/footer-logo.png" alt="footer-logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi qui provident blanditiis velit nisi cumque quibusdam, aut pariatur obcaecati est totam odio et quaerat illo dolores. At aspernatur autem et blanditiis eligendi quibusdam?</p>
+    
+        <div class="contact-moblie">
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> <span>MAIN ROAD, BUILDING NAME, COUNTRY</span> </a>
+            <a href="#"> <i class="fas fa-envelope"></i> <span>INFO@COMPANYNAME.COM</span> </a>
+        </div>
+        
+        <div class="social-link-mobile">
+            <ul>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>            
+        </div>
+        <p class="mobile-copy-right"> &copy; COMPANY NAME 2020. ALL RIGHTS RESERVED</p>
     </footer>
 <!-- sixth footer section end here -->
 
 
 
 <!-- all script tag start here -->
-<script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
+    <!-- side nav script tag start here -->
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    <!-- side nav script tag end here -->
+
+    <!-- slick slider script tag start here -->
+    <script src="./assets/slick/js/slick-jqurie-min.js"></script>
+    <script src="./assets/slick/js/slick-min-.js"></script>
+        <script>
+            $('.responsive').slick({
+                dots: true,
+                infinite: false,
+                arrows:false,
+                autoplay: true,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                responsive: [
+                    {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                    }
+                ]
+                });
+        </script>
+    <!-- slick slider script tag end here -->
+
 <!-- all script tag end here -->
-
-
-
 </body>
 </html>
