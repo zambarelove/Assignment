@@ -498,7 +498,7 @@ a{
             margin-left: 25px;
         }
         footer .contact-moblie a span{
-            padding-left: 15px;
+            padding-left: 10px;
         }
         footer .social-link-mobile ul{
             list-style: none;
@@ -617,6 +617,15 @@ a{
             font-size: 36px;
             letter-spacing: 1px;
         }
+        .popular-burger {
+            width: 90%;
+            height: 220px;
+            text-align: center;
+            background-image: url(./assets/images/secound-section/banner-1.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     /* secound banner media quries end here */
 
     /* third choose container media quries start here */
@@ -626,13 +635,6 @@ a{
         width: 65%;
     }
     /* third cgoose container media quries end here */
-
-    /* fourth events container media quries start here */
-    
-    /* fourth events container media quries end here */
-
-
-
 
     /* book table container media quries start here */
     #book-table{
@@ -666,6 +668,7 @@ a{
             margin-top: 0px;
         }
         #hero-content p {
+            width: 270px;
             font-size: 12px;
             line-height: 16px;
             padding: 5px;
@@ -676,7 +679,7 @@ a{
             text-align: center;
         }
         #hero-content h3 {
-            font-size: 55px;
+            font-size: 76px;
             margin-top: 20px;
         }
         #hero-content h3 span{
@@ -696,10 +699,22 @@ a{
             line-height: 28px;
         }
         #hero-content .hero-img img{
-            width: 500px;
+            width: 400px;
         }
     /* header media quries end here */
     
+    /* secound banner media quries start here */
+    .popular-burger {
+        width: 90%;
+        height: 220px;
+        text-align: center;
+        background-image: url(./assets/images/secound-section/banner-1.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /* secound banner mwdia quries end here */
+
     /* fourth events container media quries start here */
     #events{
         width: 90%;
@@ -820,16 +835,24 @@ a{
         color: #3d2514;
         font-weight: 700;
     }
+    #hero-content .hero-info p{
+        width: 270px;
+        height: 40px;
+        padding: 7px 0px 0 0;
+    }
     #hero-content .hero-info h3{
         font-size: 78px;
     }
     #hero-content .hero-info h3 span{
         font-size: 50px;
     }
+    #logo{
+        margin-left: 55px;
+    }
     #phone{
         position: absolute;
         top: 25px;
-        right: 0;
+        right: 60px;
     }
     header nav{
         margin-top: 0;
@@ -842,7 +865,7 @@ a{
         display: flex;
         position: absolute;
         top: 70px;
-        right: 10px;
+        right: 60px;
     }
     .lg-menu-link li:nth-child(odd){
         margin: 0 25px;
@@ -861,18 +884,18 @@ a{
         font-size: 76px;
     }
     #hero-content .hero-img img {
-        width: 610px;
+        width: 480px;
     }
     #hero-content .hero-img .price-bg {
         width: 130px;
         position: absolute;
-        top: 450px;
-        left: 465px;
+        top: 400px;
+        left: 500px;
     }
     #hero-content .hero-img span {
         position: absolute;
-        top: 480px;
-        left: 512px;
+        top: 430px;
+        left: 545px;
         font-size: 28px;
         text-align: center;
         line-height: 28px;
@@ -904,7 +927,7 @@ a{
         background-repeat: no-repeat;
         background-position: center center;
         border-radius: 10px;
-        margin: 0 10px;
+        margin: 0 20px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -921,12 +944,13 @@ a{
         background-position: center center;
         background-repeat: no-repeat;
         border-radius: 10px;
-        margin: 20px auto 0 auto;
+        margin: 20px 20px 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         padding-top: 30px;
+
     }
     /* secound banner end here */
 
@@ -944,10 +968,23 @@ a{
     
 }
 @media screen and (min-width:1330px) {
+    .hero-info{
+        padding-top: 50px;
+        padding-left: 40px;
+    }
+    #hero-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    #hero-content .hero-info p{
+        margin-bottom: 50px;
+        width: 375px;
+        height: 40px;
+        padding: 10px 0px 0 0;
+    }
     #hero-content .hero-info h3 {
         font-size: 110px;
         line-height: 70px;
-        margin-top: 70px;
     }
     #hero-content .hero-img .price-bg {
         width: 130px;
@@ -1023,7 +1060,9 @@ a{
         align-items: flex-start;
         padding-top: 30px;
     }
-
+    .two-by-one{
+        margin-right: 10px;
+    }
     #events .slider .event-info span{
         font-size: 29px;
         line-height: 39px;
