@@ -122,7 +122,6 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
 
     display: block;
 
@@ -179,8 +178,8 @@
 {
     font-family: 'slick';
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 20px;
+    right: 250px;
 
     width: 20px;
     height: 20px;
@@ -205,4 +204,12 @@
     background-color: #ffc045;
     opacity: 1;
     color: black;
+}
+@media screen and (min-width:1330px) {
+    .slick-dots li button:before{
+    font-family: 'slick';
+    position: absolute;
+    bottom: 20px;
+    left: -480px;
+    }
 }

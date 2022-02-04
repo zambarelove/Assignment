@@ -90,6 +90,11 @@
 {
     display: block;
 }
+.responsive .slick-slide img
+{
+    display: block;
+} 
+
 .slick-slide.slick-loading img
 {
     display: none;
@@ -102,6 +107,7 @@
 {
     display: block;
 }
+
 .slick-loading .slick-slide
 {
     visibility: hidden;
