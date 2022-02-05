@@ -122,10 +122,11 @@
 .slick-dots
 {
     position: absolute;
+    left: 20px;
+    bottom: 0;
+    display: inline-block;
 
-    display: block;
-
-    width: 100%;
+    width: 50%;
     padding: 0;
     margin: 0;
 
@@ -178,8 +179,8 @@
 {
     font-family: 'slick';
     position: absolute;
-    bottom: 20px;
-    right: 250px;
+    bottom: -30px;
+    left: 50px;
 
     width: 20px;
     height: 20px;
@@ -205,11 +206,39 @@
     opacity: 1;
     color: black;
 }
+@media screen and (min-width:576px) {
+    .slick-dots li button:before{
+    font-family: 'slick';
+    position: absolute;
+    bottom: -30px;
+    left: 100px;
+    }
+}
+@media screen and (min-width:768px) {
+    .slick-dots li button:before{
+    font-family: 'slick';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    }
+    .slick-dots{
+        text-align: left;
+        padding-left: 15px;
+    }
+}
+@media screen and (min-width:992px) {
+    .slick-dots li button:before{
+    font-family: 'slick';
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    }
+}
 @media screen and (min-width:1330px) {
     .slick-dots li button:before{
     font-family: 'slick';
     position: absolute;
     bottom: 20px;
-    left: -480px;
+    left: 10px;
     }
 }

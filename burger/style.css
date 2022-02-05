@@ -24,14 +24,6 @@ a{
     font-family: montserrat-regular;
     src: url('./assets/fonts/montserrat/Montserrat-Regular.ttf');
 }
-    :root{
-        --primary-color: ;
-        --secoundry-color: ;
-        --third-color: ;
-        --text-color: ;
-        --bg-color: ;
-    }
-
     /* header css start here */
 
         header{
@@ -40,20 +32,26 @@ a{
         }
         header nav{
             width: 100%;
+            height: 100px;
             display: flex;
             justify-content: space-between;
             align-items: center; 
-            padding: 0 15px;
-            margin-top: 10px;
+            padding: 10px 15px;
         }
         header nav #logo img{
             width: 150px;
+        }
+        header nav .lg-link{
+            display: none;
+        }
+        .phone{
+            display: none;
         }
         header #phone{
             display: flex ;
             align-items: center;
             justify-content: center;
-            padding: 10px;
+            padding-top: 15px;
         }
         header #phone span{
             display: flex ;
@@ -87,7 +85,7 @@ a{
             font-weight: 700;
             font-family: BebasNeue;
         }
-
+        
         .lg-menu-link{
             display: none;
         }
@@ -120,9 +118,8 @@ a{
         }  
         #nav-open{
             font-size: 25px;
-            display: flex;
-            justify-content: end;
             cursor:pointer;
+            margin-left: 110px;
         }
         .sidenav .closebtn {
             position: absolute;
@@ -137,9 +134,9 @@ a{
             display: flex;
             justify-content: center;
             flex-direction: column;
-            margin-top: 25px;
         }
         #hero-content p{
+            width: 220px;
             font-size: 12px;
             line-height: 18px;
             padding: 5px;
@@ -151,8 +148,8 @@ a{
         }
        
         #hero-content h3{
-            font-size: 48px;
-            line-height: 36px;
+            font-size: 64px;
+            line-height: 56px;
             color: #3d2514;
             font-weight: 400;
             font-family: Alfa-slab-one;
@@ -162,29 +159,10 @@ a{
             text-align: left;
         }
         #hero-content h3 span{
-            font-size: 26px;
+            font-size: 40px;
         }
         #hero-content .hero-img img{
             width:100%;
-            position: relative;
-        }
-        #hero-content .hero-img .price-bg{
-            width: 35%;
-            padding-left: 20px;
-            position: absolute;
-            top: 480px;
-            left: 10px;
-        }
-        #hero-content .hero-img span{
-            position: absolute;
-            top: 510px;
-            left: 55px;
-            font-size: 20px;
-            text-align: center;
-            line-height: 20px;
-            color: #ffffff;
-            font-weight: 500;
-            font-family: BebasNeue;
         }
     /* header css end here */
 
@@ -216,7 +194,7 @@ a{
         .popular-burger h4,
         .more-fun h4,
         .fresh h4{
-            text-shadow: 10px 0px 5px rgba(0, 0, 0, 1);
+            text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);
             padding-left: 10px;
         }
         .more-fun{
@@ -291,7 +269,7 @@ a{
             margin: 0px auto 15px auto;
         }
         .choose-info p{
-            font-size: 16px;
+            font-size: 14px;
             line-height: 24px;
             color: #3d2514;
             font-weight: 500;
@@ -347,19 +325,20 @@ a{
             font-weight: 400;
             color: #ffffff;
             background-color: #bf2222;
-            font-family: Alfa Slab One;
             display: inline-block;
+            font-family: Alfa-slab-one;
         }
     /* third choose & enjoy section end here */
 
     /* fourth section start here */
         #events{
-            width: 80%;
-            padding-bottom: 20px;
-            margin: 20px auto;
+            width: 85%;
+            padding: 20px 10px;
+            margin: 0px auto;
             filter: drop-shadow(18.656px 24.758px 21.5px rgba(0,0,0,0.17));
             background-color: #ffffff;
         }
+        
         #events .slider .event-info{
             padding: 30px 20px 30px 15px;
             text-align: center;
@@ -367,13 +346,13 @@ a{
         #events .slider .event-info span{
             font-size: 20px;
             letter-spacing: 2px;
-            line-height: 20px;
+            line-height: 22px;
             color: #3d3d3d;
             font-weight: 400;
             font-family: BebasNeue;
         }
         #events .slider .event-info h4{
-            font-size: 18px;
+            font-size: 19px;
             line-height: 40px;
             color: #3d2514;
             font-weight: 400;
@@ -388,7 +367,8 @@ a{
             font-family: montserrat-regular;
         }
         #events .slider .event-img img{
-            width: 95%;
+            width: 90%;
+            height: unset;
             margin: 0 auto;
         }
     /* fourth section end here */
@@ -396,11 +376,6 @@ a{
     /* fifth book table section start here */
         #book-table{
             width: 100%;
-            background-image: url('./assets/images/fifth-section/5.1.png');
-            background-size: cover;
-            background-position: top right;
-            background-repeat: no-repeat;
-            text-align: center;
             margin-bottom: 30px;
             padding: 30px 15px 0 15px;
         }
@@ -412,6 +387,7 @@ a{
             color: #3d2514;
             font-weight: 400;
             font-family: BebasNeue;
+            text-align: center;
         }
         #book-table h4{
             font-size: 22px;
@@ -419,15 +395,16 @@ a{
             line-height: 46px;
             color: #3d2514;
             font-weight: 700;
-            margin-bottom: 25px;
             font-family: Alfa-slab-one;
+            text-align: center;
         }
 
-        #book-table form{
+        #book-table .left-side{
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             align-items: center;
+            padding-top: 50px;
         }
         #book-table form input{
             width: 250px;
@@ -464,6 +441,7 @@ a{
         footer{
             width: 90%;
             height: 525px;
+            margin-top: 350px;
             background-image: url('./assets/images/footer-bg/footer-bg.png');
             background-size: cover;
             background-position: center center;
@@ -518,6 +496,7 @@ a{
             border-radius: 50%;
             background-color: white;
         }
+
         .fa-instagram,
         .fa-facebook,
         .fa-whatsapp{
@@ -532,16 +511,33 @@ a{
             margin-top: 50px;
         }
     /* footer css end here */
-
+    body{
+        background-image: url('./assets/images/fifth-section/5.1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 85%;
+    }
 /* all device media quries start here */
 
 @media screen and (min-width:576px) {
+    body{
+        background-image: url('./assets/images/fifth-section/5.1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 87%;
+    }
     /* header media quries start here  */
+        header nav .lg-link{
+            display: none;
+        }
         #phone-lg{
             display: none;
         }
         header nav #logo img{
             width: 170px;
+        }
+        .phone{
+            display: none;
         }
         .sidenav .closebtn {
             font-size: 50px;
@@ -590,19 +586,6 @@ a{
         #hero-content h3 span{
             font-size: 48px;
         }
-        #hero-content .hero-img .price-bg {
-            width: 25%;
-            position: absolute;
-            top: 700px;
-            left: 80px;
-        }
-        #hero-content .hero-img span{
-            top: 738px;
-            left: 133px;
-            font-size: 28px;
-            text-align: center;
-            line-height: 28px;
-        }
     /* header media quries end here */
 
     /* secound banner media quries start here */
@@ -636,15 +619,53 @@ a{
     }
     /* third cgoose container media quries end here */
 
-    /* book table container media quries start here */
-    #book-table{
-        margin-top: 100px;
+    /* events container start here */
+    .slick-dots {
+        position: absolute;
+        left: 300px;
+        bottom: 0;
+        display: inline-block;
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
     }
-    /* book table container media quries end here */
+    #events .slider .event-info h4 {
+        font-size: 28px;
+        line-height: 35px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+    /* events container end here */
 
+    /* footer start here */
+    footer .contact-moblie {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    /* footer end here */
 }
 @media screen and (min-width:768px) {
+    body{
+        background-image: url('./assets/images/fifth-section/5.1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 87%;
+    }
     /* header media quries start here */
+        header nav {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+        }
+        header nav .lg-link{
+            display: none;
+        }
         .lg-menu-link{
             display: none;
         }
@@ -685,21 +706,8 @@ a{
         #hero-content h3 span{
             font-size: 32px;
         }
-        #hero-content .hero-img .price-bg {
-            width: 130px;
-            position: absolute;
-            top: 370px;
-            left: 330px;
-        }
-        #hero-content .hero-img span {
-            top: 400px;
-            left: 375px;
-            font-size: 28px;
-            text-align: center;
-            line-height: 28px;
-        }
         #hero-content .hero-img img{
-            width: 400px;
+            width: 100%;
         }
     /* header media quries end here */
     
@@ -708,17 +716,35 @@ a{
         width: 90%;
         height: 220px;
         text-align: center;
-        background-image: url(./assets/images/secound-section/banner-1.png);
+        background-image: url('./assets/images/secound-section/banner-1.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
     /* secound banner mwdia quries end here */
 
+    /* choose container start here */
+    .choose-info h3{
+        font-size: 38px;
+        line-height: 48px;
+        color: #3d2514;
+        font-weight: 400;
+        font-family: Alfa-slab-one;
+    }
+    .choose-info p{
+        font-size: 14px;
+        line-height: 24px;
+        color: #3d2514;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: montserrat-regular;
+    }
+    /* choose container end here */
+
     /* fourth events container media quries start here */
     #events{
         width: 90%;
-        padding-bottom: 10px;
     }
     #events .slider .event-info h4{
         font-size: 28px;
@@ -728,6 +754,7 @@ a{
     #events .slider .slide-3{
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     #events .slider .slide-1 .event-info, 
     #events .slider .slide-2 .event-info,
@@ -743,9 +770,8 @@ a{
     #events .slider .slide-1 img, 
     #events .slider .slide-2 img,
     #events .slider .slide-3 img{
-        width: 300px;
-        height: 300px;
-        margin: 10px 10px 0 0;
+        width: 210px;
+        height: unset;
     }
     /* fourth events container media quries end here */
 
@@ -753,27 +779,37 @@ a{
     #book-table{
         padding: 50px;
     }
-    #book-table form{
+    
+    #book-table p{
+        font-size: 28px;
+        line-height: 28px;
+        padding-bottom: 10px;
+    }
+    #book-table h4 {
+        font-size: 42px;
+    }
+    #book-table form .left-side{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+    }
+    #book-table form .left-side input{
+        flex-basis: 48%;
     }
     #book-table form input{
-        width: 200px;
         height: 35px;
         padding: 25px 0px 20px 20px;
     }
-    .right-side{
-        margin-top: -20px;
-        margin-left: -55px;
-    }
-    #book-table{
-        margin-top: 20px;
+    #book-table form .left-side{
+        width: 70%;
+        margin: 0 auto; 
     }
     #book-table form button{
-        width: 200px;
+        width: 48%;
         height: 45px;
+        margin-bottom: 15px;
         font-size: 16px;
         line-height: 46px;
         font-family: Alfa-slab-one;
@@ -800,7 +836,7 @@ a{
     }
     footer .contact-moblie {
         position: absolute;
-        top: 170px; 
+        top: 180px; 
         right: 20px;       
     }
     footer .contact-moblie a{
@@ -825,15 +861,14 @@ a{
 }
 
 @media screen and (min-width:992px) {
-    .lg-menu-link{
-        display: flex;
-        list-style: none;
+    body{
+        background-image: url('./assets/images/fifth-section/5.1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 85%;
     }
-    .lg-menu-link a{
-        font-size: 21px;
-        letter-spacing: 4px;
-        color: #3d2514;
-        font-weight: 700;
+    header nav .lg-link{
+        display: block;
     }
     #hero-content .hero-info p{
         width: 270px;
@@ -846,26 +881,34 @@ a{
     #hero-content .hero-info h3 span{
         font-size: 50px;
     }
+    #open-nav{
+        display: none;
+    }
+    .phone{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 5px;
+        padding-right: 1px;
+    }
+    .phone span, .phone span a {
+        font-size: 14px;
+            color: #3d2514;
+            font-weight: 700;
+            font-family: montserrat-bold;
+    }
+    header #phone {
+        display: none;
+    }
     #logo{
         margin-left: 55px;
     }
-    #phone{
-        position: absolute;
-        top: 25px;
-        right: 60px;
-    }
-    header nav{
-        margin-top: 0;
-        padding-top: 30px;
-    }
     #nav-link{
         display: none;
-    }
+    }   
     .lg-menu-link{
+        list-style: none;
         display: flex;
-        position: absolute;
-        top: 70px;
-        right: 60px;
     }
     .lg-menu-link li:nth-child(odd){
         margin: 0 25px;
@@ -874,31 +917,14 @@ a{
         font-size: 21px;
         letter-spacing: 4px;
         color: #3d2514;
-        font-weight: 700;
+        font-weight: 500;
         font-family: BebasNeue;
-    }
-    #hero-content {
-        padding-top: 75px;
     }
     #hero-content h3{
         font-size: 76px;
     }
     #hero-content .hero-img img {
-        width: 480px;
-    }
-    #hero-content .hero-img .price-bg {
-        width: 130px;
-        position: absolute;
-        top: 400px;
-        left: 500px;
-    }
-    #hero-content .hero-img span {
-        position: absolute;
-        top: 430px;
-        left: 545px;
-        font-size: 28px;
-        text-align: center;
-        line-height: 28px;
+        width: 100%;
     }
 
     /* secound banner start here */
@@ -909,7 +935,7 @@ a{
         margin: 10px auto;
     }
     .popular-burger{
-        width: 490px;
+        width: 500px;
         height: 415px;
         text-align: center;
         background-image: url('./assets/images/secound-section/banner-1.png');
@@ -937,7 +963,7 @@ a{
     }
     .fresh{
         width: 450px;
-        height: 193px;
+        height: 200px;
         text-align: center;
         background-image: url('./assets/images/secound-section/landscape-2.png');
         background-size: cover;
@@ -959,15 +985,82 @@ a{
         display: flex;
         flex-direction: row;
     }
+    .oreder-info p{
+        width: 330px;
+        font-size: 17px;
+        line-height: 25px;
+        margin: 10px auto 20px auto;
+        font-family: montserrat-regular;
+    }
     /* choose container end here */
+
+    /* events container start here */
+        
+    #events .slider .event-info p{
+            font-size: 16px;
+            line-height: 28px;
+    }
+    /* events container end here */
+
+    /* book table start here */
+    #book-table form .left-side{
+        width: 50%;
+        margin: 0 auto; 
+    }
+    
+    /* book table end here */
 }
 @media screen and (min-width:1024px) {
-   
+    body{
+        background-image: url('./assets/images/fifth-section/5.1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 85%;
+    }
+    .popular-burger {
+        width: 600px;
+    }
+    .more-fun, .fresh{
+        width: 555px;
+        
+    }
+    #book-table{
+        margin-top: 50px;
+    }
+    footer p{
+        width: 480px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    #events{
+        margin-top: 50px;
+    }
+    .phone{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 5px;
+        padding-right: 1px;
+    }
 }
 @media screen and (min-width:1200px) {
-    
+    .popular-burger {
+        width: 690px;
+    }
+    .more-fun, .fresh{
+        width: 555px;
+        height: 195px;
+    }
+    .phone{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 5px;
+        padding-right: 1px;
+    }
 }
 @media screen and (min-width:1330px) {
+    /* header start here */
     .hero-info{
         padding-top: 50px;
         padding-left: 40px;
@@ -978,39 +1071,29 @@ a{
     }
     #hero-content .hero-info p{
         margin-bottom: 50px;
-        width: 375px;
-        height: 40px;
-        padding: 10px 0px 0 0;
+        width: 420px;
+        height: auto;
+        padding: 0px 0px 0 0;
+        font-size: 16px;
+        line-height: 24px;
     }
     #hero-content .hero-info h3 {
-        font-size: 110px;
+        font-size: 114px;
         line-height: 70px;
     }
-    #hero-content .hero-img .price-bg {
-        width: 130px;
-        position: absolute;
-        top: 480px;
-        left: 730px;
-    }
-    #hero-content .hero-img span {
-        position: absolute;
-        top: 510px;
-        left: 775px;
-        font-size: 28px;
-        text-align: center;
-        line-height: 28px;
-    }
-    #phone {
-        position: absolute;
-        top: 25px;
-        right: 20px;
+    .phone{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 5px;
+        padding-right: 3px;
     }
     .lg-menu-link {
         display: flex;
-        position: absolute;
-        top: 70px;
-        right: 30px;
     }
+    /* header end here */
+
+    /* banner start here */
     #banner{
         display: flex;
         flex-direction: row;
@@ -1018,7 +1101,7 @@ a{
         margin: 10px auto;
     }
     .popular-burger{
-        width: 650px;
+        width: 690px;
         height: 415px;
         text-align: center;
         background-image: url('./assets/images/secound-section/banner-1.png');
@@ -1046,7 +1129,7 @@ a{
     }
     .fresh{
         width: 593px;
-        height: 193px;
+        height: 200px;
         text-align: center;
         background-image: url('./assets/images/secound-section/landscape-2.png');
         background-size: cover;
@@ -1063,9 +1146,25 @@ a{
     .two-by-one{
         margin-right: 10px;
     }
+    /* banner end here */
+    
+    /* events continer start here */
+    .oreder-1 p,
+    .oreder-2 p,
+    .oreder-3 p{
+        font-size: 16px;
+        line-height: 24px;
+        color: #3d2514;
+        font-weight: 100;
+        margin: 10px auto 25px auto;
+        font-family: montserrat-regular;
+    }
     #events .slider .event-info span{
         font-size: 29px;
         line-height: 39px;
+    }
+    #events .slider .event-info{
+        margin-top: -200px;
     }
     #events .slider .slide-1 .event-info h4, 
     #events .slider .slide-2 .event-info h4,
@@ -1074,24 +1173,29 @@ a{
         line-height: 46px;
     }
     #events .slider .event-info p{
-        font-size: 21px;
+        font-size: 18px;
         line-height: 28px;
+        font-family: montserrat-regular;
     }
     #events .slider .slide-1 img, 
     #events .slider .slide-2 img,
     #events .slider .slide-3 img{
         width: 600px;
-        height: 300px;
+        height: 500px;
         margin: 10px 10px 0 0;
     }
+    /* events container end here */
+
     /* book table start here */
     #book-table p {
         font-size: 32px;
         line-height: 40px;
+        text-align: center;
     }
     #book-table h4 {
         padding-top: 20px;
         font-size: 50px;
+        text-align: center;
     }
     #book-table{
         min-height: 600px;
@@ -1108,5 +1212,31 @@ a{
         width: 300px;
     }
     /* book table end here */
+
+    /* footer section start here */
+    footer{
+            width: 95%;
+            height: 525px;
+            background-image: url('./assets/images/footer-bg/footer-bg.png');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin: 0px auto 30px auto;
+        
+    }
+    footer .social-link-mobile li a{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px;
+        color: black;
+        border-radius: 50%;
+        background-color: white;
+    }
+    footer .social-link-mobile li a i{
+        width: 15px;
+        height: 15px;
+        text-align: center;
+    }
+    /* footer section end here */
 }
 /* all device media quries end here */

@@ -16,17 +16,11 @@
 </head>
 <body>
 <!-- header section start here -->
-    <header>
+    <header>  
         <div id="phone">
             <img src="./assets/images/hero-section/scooter.png" alt="delivery-scooter-img"> 
-            <span> Express Delivery  <a href="#"> +1 234 567 890 </a> </span>
+            <span> Express Delivery  <a href="tel:+1234567890"> +1 234 567 890 </a> </span>
         </div>
-        <ul class="lg-menu-link">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">OUR STORY</a></li>
-            <li><a href="#">CONTACT US</a></li>
-        </ul>
         <nav>
             <div id="logo">
                 <a href="./index.html"> 
@@ -43,6 +37,18 @@
                   </div>
                 <span id="nav-open" onclick="openNav()">&#9776;</span>
             </div>
+            <div class="lg-link">
+                <div class="phone">
+                    <img src="./assets/images/hero-section/scooter.png" alt="delivery-scooter-img"> 
+                    <span> Express Delivery  <a href="tel:+1234567890"> +1 234 567 890 </a> </span>
+                </div>
+                <ul class="lg-menu-link">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
         </nav>
         <div id="hero-content">
             <div class="hero-info">
@@ -50,9 +56,7 @@
                 <h3>BURGER <br> <span>WEEK</span> </h3>
             </div>
             <div class="hero-img">
-                <img src="./assets/images/hero-section/burger.png" alt="burger-img">
-                <img src="./assets/images/hero-section/price-bg.png" alt="price-bg" class="price-bg">
-                <span>$ 5.49 <br> ONLY</span>
+                <img src="./assets/images/hero-section/hero-img.png" alt="burger-img">
             </div>
         </div>
     </header>
@@ -157,45 +161,44 @@
 
 <!-- fifth book table container start here -->
     <div id="book-table" class="section">
-        <p>RESERVATION</p>
-        <h4>BOOK YOUR TABLE</h4>
+        <div>
+            <p>RESERVATION</p>
+            <h4>BOOK YOUR TABLE</h4>
 
-        <form action=""> 
-            <div class="left-side">
-                <input type="text" placeholder="NAME"> <br>
-                <input type="text" name="date" placeholder="DATE"><br>
-                <input type="text" name="people" placeholder="PEOPLE">
-            </div>
-            <div class="right-side">
-                 <input type="email" name="emali" placeholder="EMAIL"><br>
-                 <input type="text" name="time" placeholder="TIME"><br>
-                 <button type="submit">FIND A TABLE</button>
-            </div>
-        </form> 
-
+            <form action=""> 
+                <div class="left-side">
+                    <input type="text" placeholder="NAME" class="name">
+                    <input type="email" name="emali" placeholder="EMAIL" class="mail">
+                    <input type="text" name="date" placeholder="DATE" class="date">
+                    <input type="text" name="time" placeholder="TIME" class="time">
+                    <input type="text" name="people" placeholder="PEOPLE" class="pepole">
+                    <button type="submit" class="btn">FIND A TABLE</button>
+                </div>
+            </form> 
+        </div>
     </div>
 <!-- fifth book table containr end here -->
 
 <!-- sixth footer section start here -->
-    <footer>
-        <img src="./assets/images/footer-bg/footer-logo.png" alt="footer-logo">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi qui provident blanditiis velit nisi cumque quibusdam, aut pariatur obcaecati est totam odio et quaerat illo dolores. At aspernatur autem et blanditiis eligendi quibusdam?</p>
-    
-        <div class="contact-moblie">
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> <span>MAIN ROAD, BUILDING NAME, COUNTRY</span> </a>
-            <a href="#"> <i class="fas fa-envelope"></i> <span>INFO@COMPANYNAME.COM</span> </a>
-        </div>
-        
-        <div class="social-link-mobile">
-            <ul>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-            </ul>            
-        </div>
-        <p class="mobile-copy-right"> &copy; COMPANY NAME 2020. ALL RIGHTS RESERVED</p>
-    </footer>
+<footer>
+<img src="./assets/images/footer-bg/footer-logo.png" alt="footer-logo">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi qui provident blanditiis velit nisi cumque quibusdam, aut pariatur obcaecati est totam odio et quaerat illo dolores. At aspernatur autem et blanditiis eligendi quibusdam?</p>
+
+<div class="contact-moblie">
+    <a href="#"> <i class="fas fa-map-marker-alt"></i> <span>MAIN ROAD, BUILDING NAME, COUNTRY</span> </a>
+    <a href="#"> <i class="fas fa-envelope"></i> <span>INFO@COMPANYNAME.COM</span> </a>
+</div>
+
+<div class="social-link-mobile">
+    <ul>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+    </ul>            
+</div>
+<p class="mobile-copy-right"> &copy; COMPANY NAME 2020. ALL RIGHTS RESERVED</p>
+</footer>
 <!-- sixth footer section end here -->
 
 
