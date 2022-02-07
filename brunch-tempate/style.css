@@ -1,0 +1,411 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+@font-face {
+    font-family: Raleway;
+    src: url('./assetes/fonts/raleway/static/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: Cookie;
+    src: url('./assetes/fonts/Cookie-Regular.ttf');
+}
+:root{
+    --text-primary-color: #ffffff;
+    --text-secoundry-color: #ad6c12;
+    --text-third-color:  #2a3b40;
+    --section-heading-color: #304751;
+}
+body{
+    background-color: #2a3b40;
+}
+
+/* all container css start here */
+    .container{
+        max-width: 1090px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 60px 15px 60px 15px;
+    }
+    .section-head h4{
+        font-size: 77px;
+        color: #304751;
+        font-weight: 400;
+        font-family: Cookie;
+        text-align: center;
+    }
+    .section-head h5{
+        font-size: 48px;
+        color: #ad6c12;
+        font-weight: 600;
+        font-family: Raleway;
+        text-align: center;
+    }
+    /* header css start here */
+        #header{
+            width: 100%;
+            height: 700px;
+            margin: 0 auto;
+            background-image: url('./assetes/images/header/header-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+        }
+        #header .container{
+            width: 1090px;
+            margin: 0 auto;
+            padding: 30px 0 30px 0;
+        }
+        #header nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        #logo a{
+            font-size: 35px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: Raleway;
+        }
+        #links ul{
+            list-style: none;
+            display: flex;
+        }
+        #links ul li{
+            margin-right: 15px;
+        }
+        #links ul li a{
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: Raleway;
+        }
+        .header-center-div{
+            width: 758px;
+            height: 472px;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-center-div h1{
+            font-size: 104px;
+            line-height: 55px;
+            color: #2c3a42;
+            font-weight: 400;
+            font-family: Cookie;
+        }
+        .header-center-div h2{
+            font-size: 77px;
+            color: #ad6c12;
+            font-weight: 600;
+        }
+        .header-center-div a{
+        font-size: 16px;
+        color: #26363a;
+        font-weight: 600;
+        font-family: Raleway;
+        text-align: right;
+        padding: 5px 10px;
+        background-color: #ffffff;
+    }
+    /* heaader css end here */
+
+    /* second continer start here */
+        .wrapper{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+        }
+        .wrapper .wrapper-left{
+            height: 230px;
+        }
+        .wrapper .wrapper-left h5{
+            font-size: 29px;
+            margin-bottom: 12px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: Raleway;
+        }
+        .wrapper .wrapper-left p{
+            width: 558px;
+            height: 228px;
+            font-size: 16px;
+            line-height: 27px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: Raleway;
+        }
+    /* second container end here */
+
+    /* third container start here */
+        #third-container{
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        #third-container #third-wrapper{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #third-container #third-wrapper .taste,
+        #third-container #third-wrapper .spice,
+        #third-container #third-wrapper .dish{
+            width: 350px;
+        }
+        .circle{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border-radius: 15px;
+            background-color: #2a3b40;
+        }
+        #third-wrapper-info h5{
+            font-size: 22px;
+            line-height: 33px;
+            margin: 10px 0;
+            color: #2a3b40;
+            font-weight: 700;
+        }
+        #third-wrapper-info p{
+            font-size: 16px;
+            line-height: 25px;
+            color: #2a3b40;
+            font-weight: 400;
+            font-family: Raleway;
+        }
+    /* third container end here */
+
+    /* fourth On Your Plate container start here */
+        #your-plate{
+            width: 100%;
+            background-image: url('./assetes/images/fourth-container/3-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        .section-heading{
+            width: 100%;
+        }
+        #your-plate #plate-center{
+            width: 1080px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #your-plate #plate-center h3{
+            font-size: 77px;
+            color: #304751;
+            font-weight: 400;
+            font-family: Cookie;
+            text-align: center;
+        }
+        #your-plate #plate-center h4{
+            font-size: 48px;
+            color: var(--text-secoundry-color);
+            font-weight: 600;
+            font-family: Raleway;
+            text-align: center;
+        }
+        #your-plate #plate-center .info{
+            width: 270px;
+            text-align: center;
+        }
+        #your-plate #plate-center .info h5{
+            font-size: 18px;
+            line-height: 35px;
+            color: #304751;
+            font-weight: 700;
+            font-family: Raleway;
+        }
+        #your-plate #plate-center .info p{
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            font-family: Raleway;
+            color: #304751;
+            text-align: center;
+            margin: 5px 0;
+        }
+        #your-plate #plate-center .info span{
+            font-size: 16px;
+            line-height: 24px;
+            color: #304751;
+            font-weight: 700;
+            font-family: Raleway;
+            margin-top: 15px;
+            display: inline-block;
+        }
+        .tikka, .wedges, .chicken-curry, .red-curry, .spicy-veggies, .spice-mix{
+            display: flex;
+            align-items: center;
+        }
+        
+    /* fourth On Your Plate container end here */
+
+    /* fifth made easy container start here */
+        #made-easy{
+            background-image: url('./assetes/images/fifth-container/bg.png');
+            background-color: rgba(255, 255, 255, 0.1);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        #made-easy h4{
+            font-size: 29px;
+            color: #2a3b40;
+            font-weight: 700;
+            font-family: Raleway;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #made-easy p{
+            width: 714px;
+            margin: 0 auto;
+            font-size: 16px;
+            line-height: 30px;
+            color: #2a3b40;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 10px;
+            font-family: Raleway;
+        }
+        #made-easy .circle-wrapper{
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 20px;
+
+        }
+        #made-easy ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        #made-easy ul li{
+            margin: 0px 15px;
+        }
+        #made-easy ul li a{
+            font-size: 17px;
+            color: #2a3b40;
+            font-weight: 700;
+            font-family: Raleway;
+        }
+    /* fifth made easy container end here */
+
+    /* sixth container start here */
+        #new-menu{
+            background-image: url('./assetes/images/sixth-container/6-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 235px;
+        }
+      
+        #discover{
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        #menu{
+            display: flex;
+            padding-bottom: 30px;
+        }
+        #menu .menu-left .tikka-chicken,
+        #menu .menu-left .soup,
+        #menu .menu-left .papad{
+            display: flex;
+            align-items: center;
+        }
+        #menu .menu-right .yello-curry,
+        #menu .menu-right .chicken-curry,
+        #menu .menu-right .meatballs{
+            display: flex;
+            align-items: center;
+        }
+        .tikka-chicken, .soup, .papad, .yello-curry, .chicken-curry, .meatballs{
+            margin-bottom: 30px;
+        }
+        #menu .menu-info{
+            padding-left: 10px;
+        }
+        #menu .menu-info h5{
+            font-size: 18px;
+            color: #304751;
+            font-weight: 700;
+            font-family: Raleway;
+            margin-bottom: 5px;
+        }
+        #menu .menu-info p{
+            font-size: 17px;
+            color: #304751;
+            font-weight: 400;
+            font-family: Raleway;
+        }
+        #menu .menu-info p span{
+            font-size: 17px;
+            color: #304751;
+            font-weight: 700;
+        }
+    /* sixth container end here */
+
+    /* seventh container start here */
+        #book-here img{
+            width: 100%;
+        }
+        #book-here .section-head h5{
+            font-size: 77px;
+            color: #ffffff;
+            font-weight: 400;
+            text-align: center;
+            font-family: Cookie;
+        }
+        #book-here .contact {
+            padding-bottom: 60px;
+        }
+        #book-here .top-input,  #book-here .bottom-input{
+            display: flex;
+            justify-content: space-between;
+        }
+        #book-here .contact h6{
+            font-size: 12px;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: Raleway;
+        }
+        #book-here .contact button{
+            margin: 0 48%;
+        }
+    /* seventh contianer end here */
+
+    /* eight container start here */
+        #new-menu-2 img{
+           width: 100%;
+        }
+        #new-menu-2{
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    /* eight container end here */
+
+    /* nine container start here */
+        .card-wrapper{
+            /* display: flex; */
+        }
+    /* nine container end here */
+/* all container css end here */
