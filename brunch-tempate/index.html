@@ -8,6 +8,9 @@
 
     <!-- style.css link -->
     <link rel="stylesheet" href="./style.css">
+
+    <!-- plug in -->
+    <link rel="stylesheet" href="./assetes/jQuery-Plugin-for-Responsive-Menu-System-meanMenu/meanmenu.min.css">
 </head>
 <body>
     <!-- header start here -->
@@ -50,30 +53,32 @@
     <!-- second container end here -->
 
     <!-- third container start here -->
-        <div class="container" id="third-container">
-            <div id="third-wrapper">
-                <div class="taste">
-                    <span class="circle"></span>
-                    <div id="third-wrapper-info">
-                        <h5>New Tastes</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga laborum necessitatibus laboriosam, non neque atque vero sequi.</p>
+        <div id="third-container">
+            <div class="container">
+                <div id="third-wrapper">
+                    <div class="taste">
+                        <span class="circle"></span>
+                        <div id="third-wrapper-info">
+                            <h5>New Tastes</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga laborum necessitatibus laboriosam, non neque atque vero sequi.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="spice">
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <div id="third-wrapper-info">
-                        <h5>New Spices</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga laborum necessitatibus laboriosam, non neque atque vero sequi.</p>
+                    <div class="spice">
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <div id="third-wrapper-info">
+                            <h5>New Spices</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga laborum necessitatibus laboriosam, non neque atque vero sequi.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="dish">
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <div id="third-wrapper-info">
-                        <h5>New dishes</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga laborum necessitatibus laboriosam, non neque atque vero sequi.</p>
+                    <div class="dish">
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <div id="third-wrapper-info">
+                            <h5>New dishes</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga laborum necessitatibus laboriosam, non neque atque vero sequi.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,57 +87,77 @@
 
     <!-- fourth container On Your Plate start here -->
         <div id="your-plate">
-            <div id="plate-center">
-                <div class="section-heading">
-                    <h3>India</h3>
-                <h4>ON YOUR PLATE</h4>
-                </div>
-                <div class="tikka">
-                    <img src="./assetes/images/fourth-container/4.1.png" alt="tikka chicken image">
-                    <div class="info">
-                        <h5>TIKKA CHICKEN</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, vel.</p>
-                        <span class="price">$14.95</span>
+            <div class="container">
+                <div id="plate-center">
+                    <div class="section-head">
+                        <h4>India</h4>
+                        <h5>ON YOUR PLATE</h5>
                     </div>
-                </div>
-                <div class="wedges">
-                    <img src="./assetes/images/fourth-container/4.2.png" alt="tikka chicken image">
-                    <div class="info">
-                        <h5>SPICY WEDGES</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, vel.</p>
-                        <span class="price">$10.95</span>
+                    <div class="lg-d-flex">
+                        <div class="tikka">
+                            <div>
+                                <img src="./assetes/images/fourth-container/4.1.png" alt="tikka chicken image">
+                            </div>
+                            <div class="info">
+                                <h5>TIKKA CHICKEN</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt.</p>
+                                <span class="price">$14.95</span>
+                            </div>
+                        </div>
+                        <div class="wedges">
+                            <div>
+                                <img src="./assetes/images/fourth-container/4.2.png" alt="tikka chicken image">
+                            </div>
+                            <div class="info">
+                                <h5>SPICY WEDGES</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit,sunt.</p>
+                                <span class="price">$10.95</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="chicken-curry">
-                    <div class="info">
-                        <h5>CHICKEN CURRY</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, vel.</p>
-                        <span class="price">$14.95</span>
+                    <div class="lg-d-flex">
+                        <div class="chicken-curry">
+                            <div class="info">
+                                <h5>CHICKEN CURRY</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt.</p>
+                                <span class="price">$14.95</span>
+                            </div>
+                            <div>
+                                <img src="./assetes/images/fourth-container/4.3.png" alt="tikka chicken image">
+                            </div>
+                        </div>
+                        <div class="red-curry">
+                            <div class="info">
+                                <h5>RED CURRY</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit Sunt.</p>
+                                <span class="price">$18.95</span>
+                            </div>
+                            <div>
+                                <img src="./assetes/images/fourth-container/4.4.png" alt="tikka chicken image">
+                            </div>
+                        </div>
                     </div>
-                    <img src="./assetes/images/fourth-container/4.3.png" alt="tikka chicken image">
-                </div>
-                <div class="red-curry">
-                    <div class="info">
-                        <h5>TIKKA CHICKEN</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, vel.</p>
-                        <span class="price">$18.95</span>
-                    </div>
-                    <img src="./assetes/images/fourth-container/4.4.png" alt="tikka chicken image">
-                </div>
-                <div class="spicy-veggies">
-                    <img src="./assetes/images/fourth-container/4.5.png" alt="tikka chicken image">
-                    <div class="info">
-                        <h5>SPICY VEGGIES</h5>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt.</p>
-                        <span class="price">$11.95</span>
-                    </div>
-                </div>
-                <div class="spice-mix">
-                    <img src="./assetes/images/fourth-container/4.6.png" alt="tikka chicken image">
-                    <div class="info">
-                        <h5>SPICY MIX</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt Lorem ipsum dolor sit.</p>
-                        <span class="price">$11.95</span>
+                    <div class="lg-d-flex">
+                        <div class="spicy-veggies">
+                            <div>
+                                <img src="./assetes/images/fourth-container/4.5.png" alt="tikka chicken image">
+                            </div>
+                            <div class="info">
+                                <h5>SPICY VEGGIES</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt.</p>
+                                <span class="price">$11.95</span>
+                            </div>
+                        </div>
+                        <div class="spice-mix">
+                            <div>
+                                <img src="./assetes/images/fourth-container/4.6.png" alt="tikka chicken image">
+                            </div>
+                            <div class="info">
+                                <h5>SPICY MIX</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Sunt .</p>
+                                <span class="price">$11.95</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -140,23 +165,23 @@
     <!-- fourth container On Your Plate end here -->
 
     <!-- fifth container made easy container start here -->
-        <div class="contaier">
             <div id="made-easy">
-                <h4>Traditional cuisine made easy</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptas. Nobis expedita necessitatibus quibusdam esse laborum laudantium dolorum numquam magnam quod vero?</p>
-                <div class="circle-wrapper">
-                    <span class="circle"></span>
-                    <span class="circle"></span>
-                    <span class="circle"></span>
+                <div class="container">
+                    <h4>Traditional cuisine made easy</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptas. Nobis expedita necessitatibus quibusdam esse laborum laudantium dolorum numquam magnam quod vero?</p>
+                    <div class="circle-wrapper">
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                    </div>
+                    <ul>
+                        <li><a href="#">Meals</a></li>
+                        <li><a href="#">Spices</a></li>
+                        <li><a href="#">Book</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a href="#">Meals</a></li>
-                    <li><a href="#">Spices</a></li>
-                    <li><a href="#">Book</a></li>
-                    <li><a href="#">Gallery</a></li>
-                </ul>
             </div>
-        </div>
     <!-- fifth container made easy container end here -->
 
     <!-- sixth New Menu container start here -->
@@ -178,15 +203,6 @@
                                     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quaerat similique? <span class="price">$14.95</span></P>
                                 </div>
                             </div>
-                            <div class="soup">
-                                <div>
-                                    <img src="./assetes/images/sixth-container/6.2.png" alt="lolipop img" />
-                                </div>
-                                <div class="menu-info">
-                                    <h5>TIKK CHICKEN</h5>
-                                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quaerat similique? <span class="price">$7.95</span></P>
-                                </div>
-                            </div>
                             <div class="papad">
                                 <div>
                                     <img src="./assetes/images/sixth-container/6.3.png" alt="paped img" />
@@ -194,6 +210,15 @@
                                 <div class="menu-info">
                                     <h5>PLAIN PAPADUMS</h5>
                                     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quaerat similique? <span class="price">$1.95</span></P>
+                                </div>
+                            </div>
+                            <div class="chicken-curry-1">
+                                <div>
+                                    <img src="./assetes/images/sixth-container/6.5.png" alt="chicken curry img" />
+                                </div>
+                                <div class="menu-info">
+                                    <h5>CHICKEN CURRY</h5>
+                                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quaerat similique? <span class="price">$12.95</span></P>
                                 </div>
                             </div>
                         </div>
@@ -204,17 +229,17 @@
                                     <img src="./assetes/images/sixth-container/6.4.png" alt="lolipop img" />
                                 </div>
                                 <div class="menu-info">
-                                    <h5>TIKK CHICKEN</h5>
+                                    <h5>YELLOW CURRY</h5>
                                     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quaerat similique? <span class="price">$15.95</span></P>
                                 </div>
                             </div>
-                            <div class="chicken-curry">
+                            <div class="soup">
                                 <div>
-                                    <img src="./assetes/images/sixth-container/6.5.png" alt="chicken curry img" />
+                                    <img src="./assetes/images/sixth-container/6.2.png" alt="lolipop img" />
                                 </div>
                                 <div class="menu-info">
-                                    <h5>CHICKEN CURRY</h5>
-                                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quaerat similique? <span class="price">$12.95</span></P>
+                                    <h5>SOUP OF THE DAY</h5>
+                                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quaerat similique? <span class="price">$7.95</span></P>
                                 </div>
                             </div>
                             <div class="meatballs">
@@ -222,7 +247,7 @@
                                     <img src="./assetes/images/sixth-container/6.6.png" alt="meatballs img" />
                                 </div>
                                 <div class="menu-info">
-                                    <h5>TIKK CHICKEN</h5>
+                                    <h5>SPICY MEATBALLS</h5>
                                     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quaerat similique? <span class="price">$14.95</span></P>
                                 </div>
                             </div>
@@ -230,7 +255,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     <!-- sixth New Menu container end here -->
 
     <!-- seventh book container start here -->
@@ -249,9 +274,9 @@
                                 <h6>How many people?</h6>
                                 <select name="people" >
                                     <option value="2" selected> 2 people</option>
-                                    <option value="2"> 2 people</option>
-                                    <option value="2"> 2 people</option>
-                                    <option value="2"> 2 people</option>
+                                    <option value="4"> 4 people</option>
+                                    <option value="8"> 8 people</option>
+                                    <option value="10"> 10 people</option>
                                 </select>
                             </div>
                             <div class="date">
@@ -285,7 +310,7 @@
     <!-- seventh book container end here -->
 
     <!-- eight container start here -->
-        <div id="new-menu-2">
+       <div id="new-menu-2">
             <div>
                 <img src="./assetes/images/eight-container/8-bg.png" alt="background image">
             </div>
@@ -295,10 +320,117 @@
                     <h5>OUR NEW MENU</h5>
                 </div>
                 <div class="card-wrapper">
-                    
+                    <div class="food">
+                        <div class="img-wrapper">
+                            <img src="./assetes/images/eight-container/9.1.png" alt="food card images">
+                        </div>
+                        <div class="card-info">
+                            <span>Food / 16 March 2019</span>
+                            <h5>Lorem ipsum dolor sit</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed.</p>
+                            <a href="#" class="read-more">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="spices">
+                        <div class="img-wrapper">
+                            <img src="./assetes/images/eight-container/9.2.png" alt="spices card images">
+                        </div>
+                        <div class="card-info">
+                            <span>Spices / 16 March 2019</span>
+                            <h5>Lorem ipsum dolor sit</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed.</p>
+                            <a href="#" class="read-more">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="curry">
+                        <div class="img-wrapper">
+                            <img src="./assetes/images/eight-container/9.3.png" alt="food card images">
+                        </div>
+                        <div class="card-info">
+                            <span>Chicken Curry / 16 March 2019</span>
+                            <h5>Lorem ipsum dolor sit</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, sed.</p>
+                            <a href="#" class="read-more">READ MORE</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     <!-- eight container end here -->
+
+    <!-- nine container start here -->
+        <div class="container" id="social-container">
+            <div class="social-info">
+                <i class="fas fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus explicabo nemo laborum rerum delectus mollitia, molestiae labore beatae quam quae laboriosam aspernatur, neque hic architecto.</p>
+                <h5>Linda Steward</h5>
+                <div id="social-link">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/accounts/login"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://in.pinterest.com/"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!-- nine container end here -->
+
+    <!-- footer start here -->
+        <footer>
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="left-footer-info">
+                        <h5>ABOUT</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cumque aliquam itaque sapiente nisi vel dignissimos.</p>
+                    </div>
+                    <div class="right-footer-info">
+                        <div class="right-info-1">
+                            <h5>ABOUT</h5>
+                            <ul>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Join Us</a></li>
+                                <li><a href="#">Ethic</a></li>
+                                <li><a href="#">Goals</a></li>
+                            </ul>
+                        </div>
+                        <div class="right-info-2">
+                            <h5>ABOUT</h5>
+                            <ul>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Join Us</a></li>
+                                <li><a href="#">Ethic</a></li>
+                                <li><a href="#">Goals</a></li>
+                            </ul>
+                        </div>
+                        <div class="right-info-3">
+                            <h5>ABOUT</h5>
+                            <ul>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Join Us</a></li>
+                                <li><a href="#">Ethic</a></li>
+                                <li><a href="#">Goals</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- footer end here -->
+
+    <!-- all script tag start here -->
+        <script src="./assetes/fontawsome-icon/fontawsome-script.js"></script>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="./assetes/jQuery-Plugin-for-Responsive-Menu-System-meanMenu/jquery.meanmenu.min.js"></script>
+        <script>
+            jQuery(document).ready(function () {
+                jQuery('#header nav').meanmenu({
+                    meanExpand: '<i class="fas fa-angle-down"></i>',
+                    meanContract: '<i class="fas fa-angle-up"></i>',
+                });
+            });
+        </script>
+    <!-- all script tag end here -->
 </body>
 </html>
