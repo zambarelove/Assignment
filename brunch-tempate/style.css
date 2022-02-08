@@ -684,7 +684,7 @@ body{
                     padding-right: 50px;
                 }
                 .wrapper-right img{
-                    width: 300px;
+                    width: 400px;
                 }
             /* second container media quries end here */
 
@@ -792,7 +792,11 @@ body{
                     justify-content: end;
                 }
             /* header media quries start here */
-
+            /* secound container start here */
+            .wrapper-right img{
+                width: 400px;
+            }
+            /* secound container end here */
             /* fourth on your plate container media quries start here */
                 #your-plate #plate-center{
                     width: 100%;
@@ -906,6 +910,11 @@ body{
             .header-center-div {
                 width: 45%;
             }
+            /* secound container start here */
+            .wrapper-right img {
+                width: 450px;
+            }
+            /* secound container start here */
             #your-plate #plate-center{
                 width: 100%;
                 background-color: rgba(255, 255, 255, 0.8);
@@ -927,6 +936,10 @@ body{
             #plate-center .info{
                 padding: 0px 0px;
                 flex-basis: 100%;
+            }
+            #third-container #third-wrapper {
+                display: flex;
+                justify-content: space-between;
             }
             .tikka img, .wedges img, .chicken-curry img, .red-curry img, .spicy-veggies img, .spice-mix img{
                 width: 250px;
