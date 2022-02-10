@@ -6,12 +6,16 @@
     outline: none;
 }
 a{
-    color: #ffffff;
+    color: var(--text-primary-color);
     text-decoration: none;
 }
 @font-face {
     font-family: Raleway;
     src: url('./assetes/fonts/raleway/static/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: realway-bold;
+    src: url('./assetes/fonts/raleway/static/Raleway-Bold.ttf');
 }
 
 @font-face {
@@ -50,7 +54,7 @@ body{
         text-align: center;
     }
     .section-head h5{
-        font-size: 48px;
+        font-size: 32px;
         color: var(--text-secoundry-color);
         font-weight: 600;
         font-family: Raleway;
@@ -60,7 +64,7 @@ body{
     /* header css start here */
         #header{
             width: 100%;
-            height: 543px;
+            min-height: 800px;
             margin: 0 auto;
             background-image: url('./assetes/images/header/header-bg.jpg');
             background-repeat: no-repeat;
@@ -170,11 +174,11 @@ body{
             align-items: flex-start;
         }
         .wrapper .wrapper-left h5{
-            font-size: 24px;
+            font-size: 22px;
             margin-bottom: 12px;
             color: var(--text-primary-color);
             font-weight: 700;
-            font-family: Raleway;
+            font-family: realway-bold;
         }
         .wrapper .wrapper-left p{
             width: 100%;
@@ -199,7 +203,7 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            align-items: flex-start;
+            align-items: center;
         }
         #third-container #third-wrapper .taste,
         #third-container #third-wrapper .spice,
@@ -215,12 +219,12 @@ body{
             background-color: var(--text-third-color);
         }
         #third-wrapper-info h5{
-            font-size: 30px;
+            font-size: 22px;
             line-height: 33px;
             margin-top: 15px;
             color: var(--text-third-color);
             font-weight: 700;
-            font-family: Raleway;
+            font-family: realway-bold;
         }
         #third-wrapper-info p{
             font-size: 14px;
@@ -268,26 +272,28 @@ body{
             width: 100%;
             text-align: center;
             order: 2;
+            margin-bottom: 15px;
         }
         #your-plate #plate-center .info h5{
-            font-size: 24px;
+            font-size: 22px;
             line-height: 35px;
             color: var(--section-heading-color);
             font-weight: 700;
-            font-family: Raleway;
+            font-family: realway-bold;
             margin-top: 15px;
         }
         #your-plate #plate-center .info p{
-            font-size: 16px;
+            font-size: 14px;
             line-height: 21px;
             font-weight: 400;
             font-family: Raleway;
             color: var(--section-heading-color);
             text-align: center;
             margin: 5px 0;
+            padding: 0 20px;
         }
         #your-plate #plate-center .info span{
-            font-size: 22px;
+            font-size: 20px;
             line-height: 24px;
             color: var(--section-heading-color);
             font-weight: 700;
@@ -312,21 +318,21 @@ body{
     /* fifth made easy container css start here */
         #made-easy{
             background-color: rgba(255, 255, 255, 1);
-            padding-top: 60px;
-            padding-bottom: 60px;
+            padding-top: 90px;
+            padding-bottom: 64px;
         }
         #made-easy h4{
-            font-size: 22px;
+            font-size: 18px;
             color: var(--text-third-color);
             font-weight: 700;
-            font-family: Raleway;
+            font-family: realway-bold;
             text-align: center;
             margin-bottom: 20px;
         }
         #made-easy p{
             width: 100%;
             margin: 0 auto;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 30px;
             color: var(--text-third-color);
             font-weight: 400;
@@ -352,7 +358,7 @@ body{
             font-size: 17px;
             color: var(--text-third-color);
             font-weight: 700;
-            font-family: Raleway;
+            font-family: realway-bold;
         }
     /* fifth made easy container css end here */
 
@@ -363,6 +369,9 @@ body{
             background-size: cover;
             padding-top: 235px;
         }
+        #new-menu .container{
+            padding: 0 20px 60px 20px;
+        }
         #discover{
             width: 100%;
             background-color: rgba(255, 255, 255, 0.7);
@@ -370,6 +379,7 @@ body{
         #menu{
             display: flex;
             flex-direction: column;
+            align-items: center;
             padding-bottom: 30px;
         }
         #menu .menu-left .tikka-chicken,
@@ -395,7 +405,7 @@ body{
             font-size: 18px;
             color: var(--section-heading-color);
             font-weight: 700;
-            font-family: Raleway;
+            font-family: realway-bold;
             margin-bottom: 5px;
         }
         #menu .menu-info p{
@@ -409,10 +419,14 @@ body{
             font-size: 18px;
             color: var(--section-heading-color);
             font-weight: 700;
+            font-family: realway-bold;
         }
     /* sixth container css end here */
 
     /* seventh container css start here */
+        #book-here .container{
+            padding-top: 0px;
+        }
         #book-here img{
             width: 100%;
         }
@@ -433,10 +447,10 @@ body{
         }
         input, select{
             background-color: transparent;
-            border: 1px solid var(--text-primary-color);
+            border: 1.5px solid var(--text-primary-color);
             margin: 15px 0;
             padding: 10px;
-            border-radius: 5px;
+            border-radius: 8px;
             color: var(--text-primary-color);
             width: 100%;
         }
@@ -453,7 +467,7 @@ body{
             font-size: 18px;
             color: var(--text-primary-color);
             font-weight: 600;
-            font-family: Raleway;
+            font-family: realway-bold;
         }
         form{
             display: flex;
@@ -461,18 +475,15 @@ body{
         }
         #book-here button{
             margin-top: 20px;
-            margin-left: 45%;
-            padding: 10px 40px;
+            margin-left: 30%;
+            padding: 8px 40px;
             cursor: pointer;
-            border: 1px solid;
-            border-radius: 5px;
-            
+            border: 1.5px solid var(--text-primary-color);
+            border-radius: 8px;
             color: var(--text-primary-color);
             background-color: transparent;
         }
-        #book-here button{
-            margin-left: 30%;
-        }
+       
     /* seventh contianer css end here */
 
     /* eight container css start here */
@@ -481,6 +492,7 @@ body{
         }
         #new-menu-2{
             background-color: rgba(255, 255, 255, 0.7);
+            padding-bottom: 35px;
         }
         #new-menu-2 .container{
             padding: 0px 15px;
@@ -509,7 +521,7 @@ body{
             font-size: 17px;
             color: #4f4e4e;
             font-weight: 700;
-            font-family: Raleway;
+            font-family: realway-bold;
             margin: 10px 0;
         }
         #new-menu-2 .card-wrapper .card-info p{
@@ -540,7 +552,6 @@ body{
         }
         .curry{
             background-color: var(--text-primary-color);
-            margin-top: -30px;
         }
     /* eight new menu-2 container css end here */
 
@@ -553,7 +564,7 @@ body{
             color: var(--text-primary-color);
         }
         .social-info p{
-            width: 100%;
+            width: 80%;
             font-size: 14px;
             line-height: 21px;
             color: var(--text-primary-color);
@@ -567,7 +578,7 @@ body{
             line-height: 33px;
             color: var(--text-primary-color);
             font-weight: 700;
-            font-family: Raleway;
+            font-family: realway-bold;
             text-align: center;
             margin-bottom: 40px;
         }
@@ -610,7 +621,7 @@ body{
             line-height: 33px;
             color: #2d2f2a;
             font-weight: 700;
-            font-family: Raleway;
+            font-family: realway-bold;
             margin-bottom: 20px;
         }
         .left-footer-info p{
@@ -632,7 +643,7 @@ body{
             line-height: 33px;
             color: #2d2f2a;
             font-weight: 700;
-            font-family: Raleway;
+            font-family: realway-bold;
             margin-bottom: 15px;
         }
         .right-footer-info ul{
@@ -643,7 +654,7 @@ body{
             line-height: 33px;
             color: #2d2f2a;
             font-weight: 700;
-            font-family: Raleway;
+            font-family: realway-bold;
         }
         .right-footer-info .right-info-3 ul li a{
             font-size: 14px;
@@ -652,10 +663,13 @@ body{
             font-weight: 400;
             font-family: roboto;
         }
-    /* footer css end here */
-::-webkit-calendar-picker-indicator {
-    filter: invert(1);
-}
+        ::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
+        .name, .email, .phone, .date, .time{
+            margin-top: 30px;
+        }
+        /* footer css end here */
 /* all container css end here */
 
 /* all device media quries start here */
@@ -729,8 +743,8 @@ body{
         /* sixth container media quries start here */
             #menu{
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
+                flex-direction: row;
+                justify-content: space-between;
                 align-items: center;
                 padding-bottom: 0;
             }
@@ -745,28 +759,39 @@ body{
         /* eight container media quries start here */
             #new-menu-2 .card-wrapper{
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
             #new-menu-2 .card-wrapper .food, .spices{
                 margin-right: 15px;
             }
+           
             #new-menu-2 .card-wrapper .card-info h5 {
                 font-size: 18px;
             }
             #new-menu-2 .card-wrapper .card-info p {
-                font-size: 15px;
+                font-size: 17px;
+                padding: 0 100px 0 0;
             }
             #new-menu-2 .card-wrapper .card-info span {
                 font-size: 14px;
                 letter-spacing: 0px;
             }
         /* eight container media quries end here */
-        form{
-            display: flex;
-            flex-direction: column;
-        }
+
+            form{
+                display: flex;
+                flex-direction: column;
+            }
+            #book-here button{
+                width: 190px;
+                display: inline-block;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                margin-top: 25px;
+            }
         /* footer media quries start here */
             .footer-wrapper{
                 display: flex;
@@ -774,7 +799,7 @@ body{
                 justify-content: space-around;
             }
             .left-footer-info p{
-                width: 300px;
+                width: 380px;
             }
             .right-footer-info {
                 margin-top: 0;
@@ -782,6 +807,7 @@ body{
             .right-info-1, .right-info-2{
                 margin-right: 50px;
             }
+
         /* footer media quries end here */
     }
     @media screen and (min-width:768px) {
@@ -796,18 +822,21 @@ body{
             .header-center-div h1 {
                 font-size: 102px;
             }
+            .header-center-div{
+                transform: translate(-50%, -50%);
+            }
             #header nav{
                 display: none;
                 margin: 0 20px;
             }
             #links ul{
                 list-style: none;
-                display: flex;
-                justify-content: end;
+                display: block;
             }
+            
             #logo{
-                margin-top: 0px;
-                margin-left: 0px;
+                margin-top: 20px;
+                margin-left: 25px;
             }
         /* header media quries start here */
         /* secound container start here */
@@ -854,7 +883,6 @@ body{
             }
         /* fifth made easy container media quries end here */
     
-        /* seventh book container media quries start here */
             #book-here .top-input,  #book-here .bottom-input{
                 display: flex;
                 flex-direction: row;
@@ -867,10 +895,29 @@ body{
                 display: flex;
                 flex-direction: row;
             }
-            #book-here .contact button {
-                margin-left: 45%;
+            .date, .time{
+                margin-top: 0;
             }
-        /* seventh book container media quries end here */
+            .name, .email, .phone{
+                margin-top: 30px;
+            }
+            
+            #header nav{
+                display: block;
+                margin: 0 20px;
+            }
+            #new-menu-2 .card-wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            #new-menu-2 .card-wrapper .food,  #new-menu-2 .card-wrapper .spices{
+                margin-bottom: 0px;
+            }
+            #new-menu-2 .card-wrapper{
+                padding-top: 0;
+            }
     }
     @media screen and (min-width:992px) {
         .container{
@@ -894,11 +941,15 @@ body{
         }
         #header nav{
             display: flex !important;
-            flex-direction: row;
             justify-content: space-between;
-            align-items: center;
-            text-align: center;
+            flex-direction: row;
             margin: 0 20px;
+        }
+        .mean-container .mean-bar{
+            margin-top: 30px;
+        }
+        #links{
+            align-self: flex-end;
         }
         #links ul{
             list-style: none;
@@ -915,6 +966,9 @@ body{
             background-size: cover;
             background-position: center center;
         }
+        #made-easy p {
+            padding: 0 160px;
+        }
         /* fifth made easy container media quries end here */
 
         /* sixth container start here */
@@ -925,6 +979,13 @@ body{
             padding-bottom: 30px;
         }
         /* sixth container end here */
+        
+        #logo a{
+            font-size: 35px;
+        }
+        #links ul li a{
+            font-size: 35px;
+        }
         .header-center-div {
             width: 61%;
         }
@@ -948,7 +1009,8 @@ body{
             font-size: 18px;
         }
         #your-plate #plate-center .info p {
-            font-size: 18px;
+            font-size: 17px;
+            padding: 0 57px;
         }
         #made-easy h4 {
             font-size: 29px;
@@ -960,8 +1022,26 @@ body{
         #new-menu-2 .card-wrapper .card-info h5 {
             font-size: 17px;
         }
+        #menu .menu-info p {
+            font-size: 17px;
+        }
+        #book-here h6 {
+            font-size: 18px;
+        }
+        #book-here button {
+            font-size: 17px;
+        }
+        .section-head h5 {
+            font-size: 48px;
+            font-family: Realway-bold;
+        }
+        #new-menu-2 .card-wrapper .card-info .read-more {
+            font-family: Realway-bold;
+        }
         .social-info p {
             font-size: 19px;
+            line-height: 33px;
+            padding: 0 70px;
         }
         .social-info h5 {
             font-size: 19px;
@@ -983,15 +1063,28 @@ body{
             font-size: 21px;
         line-height: 33px;
         }
-
+        .name, .email, .phone{
+            margin-top: 30px;
+        }
+        #book-here button{
+            width: 190px;
+            display: inline-block;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
     }
     @media screen and (min-width:1200px) {
         .container {
             max-width: 1140px;
             margin: 0 auto;
         }
-        #header{
-            min-height: 700px;
+        #header nav{
+            display: flex !important;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 20px;
         }
         #menu{
             display: flex;
@@ -1084,7 +1177,19 @@ body{
             flex-direction: row;
         }
         #book-here button{
-            margin-left: 45%;
+            width: 193px;
+            display: inline-block;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        #new-menu .container{
+            padding: 0 100px;
+        }
+        #new-menu-2 .card-wrapper {
+            padding-top: 0;
         }
     }
 /* all device media quries end here */

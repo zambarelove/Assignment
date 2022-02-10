@@ -182,7 +182,7 @@ a{
             margin: 50px auto;
         }
         .popular-burger{
-            width: 90%;
+            width: 100%;
             height: 220px;
             text-align: center;
             background-image: url('./assets/images/secound-section/banner-1.png');
@@ -206,7 +206,7 @@ a{
             padding-left: 10px;
         }
         .more-fun{
-            width: 90%;
+            width: 100%;
             height: 220px;
             background-image: url('./assets/images/secound-section/landscape-1.png');
             background-size: cover;
@@ -231,7 +231,7 @@ a{
             font-family: BebasNeue;
         }
         .fresh{
-            width: 90%;
+            width: 100%;
             height: 220px;
             text-align: center;
             background-image: url('./assets/images/secound-section/landscape-2.png');
@@ -345,7 +345,7 @@ a{
 
     /* fourth section start here */
         #events{
-            width: 85%;
+            width: 100%;
             padding: 0px 10px 20px 0;
             margin: 0px auto;
             filter: drop-shadow(18.656px 24.758px 21.5px rgba(0,0,0,0.17));
@@ -456,6 +456,11 @@ a{
             background-repeat: no-repeat;
             margin: 0 auto 30px auto;
             padding: 0 15px 15px 15px;
+        }
+        footer .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         footer img{
             width: 100%;
@@ -655,7 +660,7 @@ a{
 
     /* events container start here */
     .slick-dots {
-        left: 10px;
+        left: 80px;
         bottom: 0;
     }
     #events{
@@ -733,7 +738,7 @@ a{
             width: 270px;
             font-size: 12px;
             line-height: 16px;
-            margin: 70px 15px 0 0px;
+            margin: 0px;
         }
         #hero-content h3 {
             font-size: 76px;
@@ -763,7 +768,7 @@ a{
 
     /* fourth events container media quries start here */
     #events{
-        width: 90%;
+        width: 100%;
     }
     #events .slider .event-info h4{
         font-size: 28px;
@@ -801,8 +806,8 @@ a{
         margin: 16px 10px 7px 0;
     }
     .slick-dots {
-        bottom: 0px;
-        left: 10px;
+        bottom: 10px;
+        left: 0px;
     }
     /* fourth events container media quries end here */
 
@@ -838,18 +843,6 @@ a{
     #book-table form .left-side{
         width: 70%;
         margin: 0 auto; 
-    }
-    #book-table form button{
-        width: 48%;
-        height: 45px;
-        margin-bottom: 15px;
-        font-size: 16px;
-        line-height: 46px;
-        font-family: Alfa-slab-one;
-        color: #ffffff;
-        font-weight: 400;
-        border-radius: 5px;
-        background-color: #bf2222;
     }
     /* book table container end here */
 
@@ -1171,11 +1164,10 @@ a{
     }
     
     #hero-content .hero-info p{
-        width: 420px;
-        height: auto;
         padding: 0px 0px 0 0;
         font-size: 24px;
         line-height: 33px;
+        margin-bottom: 40px;
     }
     #hero-content .hero-info h3 {
         font-size: 114px;
@@ -1306,12 +1298,14 @@ a{
         padding: 25px 0px 20px 20px;
     }
     #book-table form button {
-        width: 300px;
+        width: 295px;
     }
     /* book table end here */
-
-    /* footer section start here */
-   
-    /* footer section end here */
+}
+@media screen and (min-width:1354px) {
+    #book-table form button{
+        width: 437px;
+        height: 45px;
+    }
 }
 /* all device media quries end here */
