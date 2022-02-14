@@ -145,19 +145,20 @@ a{
             flex-direction: column;
         }
         #hero-content p{
-            width: 220px;
-            font-size: 12px;
+            width: auto;
+            font-size: 18px;
             line-height: 18px;
             padding: 5px;
             color: #3d2514;
             font-weight: 400;
-            border: 1px dashed #3d2514;
+            border: 2px dashed #3d2514;
             margin: 50px 15px 0 0;
             text-align: center;
+            font-family: BebasNeue;
         }
        
         #hero-content h3{
-            font-size: 58px;
+            font-size: 60px;
             line-height: 56px;
             color: #3d2514;
             font-weight: 400;
@@ -204,6 +205,7 @@ a{
         .fresh h4{
             text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);
             padding-left: 10px;
+            text-align: left;
         }
         .more-fun{
             width: 100%;
@@ -383,6 +385,10 @@ a{
             height: unset;
             margin: 0 auto;
         }
+        .slick-dots {
+            bottom: 0px;
+            left: 55px;
+        }
     /* fourth section end here */
 
     /* fifth book table section start here */
@@ -435,7 +441,7 @@ a{
             font-family: BebasNeue;
         }
         #book-table form button{
-            width: 250px;
+            width: 245px;
             height: 45px;
             font-size: 16px;
             line-height: 46px;
@@ -443,6 +449,7 @@ a{
             color: #ffffff;
             font-weight: 400;
             border-radius: 5px;
+            margin-bottom: 17px;
             background-color: #bf2222;
         }
     /* fifth book table section end here */
@@ -595,6 +602,9 @@ a{
             font-family: BebasNeue;
             margin: 30px 0px ;
         } 
+        #hero-content .hero-info {
+            align-self: center;
+        }
         #hero-content p {
             width: 300px;
             font-size: 18px;
@@ -602,7 +612,7 @@ a{
             padding: 5px;
             color: #3d2514;
             font-weight: 400;
-            border: 1px dashed #3d2514;
+            border: 2px dashed #3d2514;
             margin: 50px 0px 0 0px;
             text-align: center;
         }
@@ -677,7 +687,9 @@ a{
     #book-table form {
         padding-top: 15px;
     }
-
+    #book-table form button {
+        width: 255px;
+    }
     /* footer start here */
     footer img{
         width: 300px;
@@ -694,6 +706,7 @@ a{
         display: flex;
         flex-direction: column;
     }
+
     /* footer end here */
 }
 @media screen and (min-width:768px) {
@@ -736,9 +749,10 @@ a{
         }
         #hero-content p {
             width: 270px;
-            font-size: 12px;
+            font-size: 18px;
             line-height: 16px;
             margin: 0px;
+            border: 2px dashed #3d2514;
         }
         #hero-content h3 {
             font-size: 76px;
@@ -754,7 +768,7 @@ a{
     
     /* secound banner media quries start here */
     .popular-burger {
-        width: 90%;
+        width: 100%;
         height: 220px;
     }
     /* secound banner mwdia quries end here */
@@ -843,6 +857,18 @@ a{
     #book-table form .left-side{
         width: 70%;
         margin: 0 auto; 
+    }
+    #book-table form button{
+        width: 224px;
+        height: 45px;
+        font-size: 16px;
+        line-height: 46px;
+        font-family: Alfa-slab-one;
+        color: #ffffff;
+        font-weight: 400;
+        border-radius: 5px;
+        margin-bottom: 17px;
+        background-color: #bf2222;
     }
     /* book table container end here */
 
@@ -1047,6 +1073,18 @@ a{
     #book-table form {
         padding-top: 30px;
     }
+    #book-table form button{
+        width: 224px;
+        height: 45px;
+        font-size: 16px;
+        line-height: 46px;
+        font-family: Alfa-slab-one;
+        color: #ffffff;
+        font-weight: 400;
+        border-radius: 5px;
+        margin-bottom: 17px;
+        background-color: #bf2222;
+    }
     /* book table end here */
 
     /* footer start here */
@@ -1120,7 +1158,9 @@ a{
         padding-bottom: 5px;
         padding-right: 1px;
     }
-
+    #book-table form button {
+        max-width: 300px;
+    }
   
 }
 @media screen and (min-width:1200px) {
@@ -1147,7 +1187,9 @@ a{
         width: 600px;
         margin: 12px 0px 7px 0;
     }
-   
+    #book-table form button {
+        width: 279px;
+    }
 }
 @media screen and (min-width:1330px) {
     .container{
@@ -1164,10 +1206,12 @@ a{
     }
     
     #hero-content .hero-info p{
+        width: 500px;
         padding: 0px 0px 0 0;
         font-size: 24px;
         line-height: 33px;
         margin-bottom: 40px;
+        border: 2px dashed #3d2514;
     }
     #hero-content .hero-info h3 {
         font-size: 114px;
@@ -1208,18 +1252,20 @@ a{
     .popular-burger{
         margin: 0;
         border-radius: 10px;
-        flex-basis: 49%;
+        flex-basis: 40%;
         padding-top: 15px;
         padding-left: 15px;
+        margin-left: 50px;
     }
     .more-fun{
-        width: 100%;
+        width: 90%;
         margin: 0;
         padding-top: 15px;
         padding-left: 15px;
+        margin-right: 60px;
     }
     .fresh{
-        width: 100%;
+        width: 90%;
         margin: 0;
         padding-top: 15px;
         padding-left: 15px;
@@ -1298,13 +1344,13 @@ a{
         padding: 25px 0px 20px 20px;
     }
     #book-table form button {
-        width: 295px;
+        width: 294px;
     }
     /* book table end here */
 }
 @media screen and (min-width:1354px) {
     #book-table form button{
-        width: 437px;
+        width: 297px;
         height: 45px;
     }
 }
