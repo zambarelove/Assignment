@@ -1,0 +1,1141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: Poppins;
+    src: url('./assets/goggle-font/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('./assets/goggle-font/Poppins/Poppins-Bold.ttf');
+}
+:root{
+    --main-text-color: #242f51;
+    --btn-bg-color: #2500f9;
+    --paragraph-text-color: #616368;
+    --text-secound-color: #999ca5;
+    --border-color: #ebebeb;
+    --bg-color:  #e2eaed;
+    --white-color: #ffffff;
+    --a-link-color: #2500f9;
+    --pink:  #f55767;
+    --light-blue: #2563ff;
+    --light-green:  #40975f;
+    --vertical-border-color:  #4b4a48;
+    --tab-bottom-border: #e5e6e5;
+    --star-color:  #ffcc00;
+    --footer-bg-color:  #09142e;
+    --social-link-unhover: #273043;
+}
+
+/* Comman Css Start Here */
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .section{
+        padding: 40px 0px 0px 0px;
+    }
+    .section-heading h2{
+        color: var(--main-text-color);
+        font-weight: 600;
+        font-family: Poppins-Bold;
+    }
+    .section-heading p{
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--paragraph-text-color);
+        font-weight: 400;
+        font-family: Poppins;
+    }
+/* Comman Css Start Here */
+    
+/* Header Css Start Here */
+    header{
+        width: 100%;
+        min-height: 100vh;
+    }
+    .lg-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-nav-links{
+        display: none;
+        list-style: none;
+    }
+    .top-nav-links li{
+        margin: 0 40px 0 0;
+    }
+
+    .top-nav-links a{
+        font-size: 16px;
+        line-height: 44px;
+        font-weight: 400;
+        font-family: Poppins;
+        color: var(--main-text-color);
+    }
+    .top-nav-links .blue-btn{
+        color: var(--white-color);
+        font-family: Poppins;
+    }
+    .blue-btn{
+        font-size: 16px;
+        line-height: 44px;
+        color: var(--white-color);
+        padding: 10px 20px;
+        border-radius: 29px;
+        background-color: var(--btn-bg-color);
+        font-family: Poppins;
+        font-weight: 500;
+    }
+    .hero-section{
+        width: 100%;
+        height: 100%;
+        background-image: url('./assets/images/header/header-bg.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .hero-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .hero-info{
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+    .hero-img-wrapper img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .strip-span {
+        width: 270px;
+        border-radius: 17px;
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: 400;
+        font-family: Poppins;
+        display: flex;
+        align-items: center;
+        color: var(--main-text-color);
+        background-color: var(--bg-color);
+        margin-bottom: 10px;
+    }
+    .strip-span img{
+        padding-right: 10px;
+    }
+    .hero-info h2{
+        font-size: 30px;
+        line-height: 40px;
+        color: var(--main-text-color);
+        font-weight: 600;
+        font-family: Poppins;
+    }
+    .hero-info p{
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        font-family: Poppins;
+        color: var(--paragraph-text-color);
+        padding-right: 0px;
+        margin: 10px 0 30px 0;
+    }
+    .hero-info .demo{
+        font-size: 14px;
+        line-height: 44px;
+        color: var(--a-link-color);
+        font-weight: 400;
+        font-family: Poppins;
+        margin-left: 10px;
+    }
+/* Header Css Start Here */
+
+/* Trust Section Start Here */
+    .trust-section h3{
+        text-align: center;
+        font-size: 16px;
+        line-height: 28px;
+        color: #242f51;
+        font-weight: 400;
+        font-family: Poppins;
+        margin-bottom: 15px;
+    }
+    .trust-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .trust-wrapper div{
+        margin: 20px 0;
+    }
+    .trust-img-wrapper{
+        padding-top: 15px 0;
+    }
+/* Trust Section End Here */
+
+/* Feature Section Start Here */
+    .feature-right-info .section-heading h2{
+        font-size: 36px;
+        line-height: 46px;
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .feature-right-info .section-heading p{
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+        padding-left: 0px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .feature-main-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .feature-right-info{
+        padding-left: 0px;
+        flex-basis: 100%;
+    }
+    .feature-wrapper{
+        margin-top: 40px;
+    }
+    .feature-left-img{
+        flex-basis: 50%;
+    }
+    .feature-left-img img{
+        width: 100%;
+    }
+    .feature{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .feature-info{
+        padding-left: 15px;
+    }
+    .feature-info h3{
+        font-size: 20px;
+        line-height: 58px;
+        font-weight: 600;
+        font-family: Poppins;
+        text-align: center;
+    }
+    .feature-info p{
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--paragraph-text-color);
+        font-weight: 400;
+        font-family: Poppins;
+        width: 100%;
+        text-align: center;
+    }
+    .performance h3{
+        color: var(--pink);
+    }
+    .prototyping h3{
+        color: var(--light-blue);
+    }
+    .vector h3{
+        color: var(--light-green);
+    }
+/* Feature Section End Here */
+
+/* Jackpot section Start Here */
+    .jackpot-section .section-heading .border-right{
+        border-right: none;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .jackpot-section .section-heading h2{
+        font-size: 24px;
+        line-height: 32px;
+        width: 100%;
+        margin-right: 0px;   
+        text-align: center; 
+    }
+    .jackpot-section .section-heading p{
+        font-size: 14px;
+        line-height: 26px;
+        width: 100%;
+        text-align: center;
+    }
+    .jackpot-section .section-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .jackpot-wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+    .jackpot{
+        text-align: center;
+        margin: 0px 0px 20px;
+    }
+    .jackpot-info h3{
+        font-size: 20px;
+        line-height: 58px;
+        font-weight: 600;
+        font-family: Poppins;
+    }
+    .jackpot-info p{
+        font-size: 14px;
+        line-height: 26px;
+        color: var(--paragraph-text-color);
+        font-weight: 400;
+        font-family: Poppins;
+        padding-right: 0px;
+        width: 237px;
+    }
+    .jackpot-one{
+        color: var(--pink);
+    }
+    .jackpot-two{
+        color: var(--light-blue);
+    }
+    .jackpot-three{
+        color: var(--light-green);
+    }
+/* Jackpot section End Here */
+
+/* Design And Built Section Start Here */
+    .design-bulid-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .design-left-img img{
+        width: 100%;
+    }
+    .design-right-info{
+        flex-basis: 40%;
+        text-align: center;
+    }
+    .design-right-info h2{
+        font-size: 26px;
+        line-height: 38px;
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .design-right-info p{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .design-right-info .blue-btn{
+        padding: 10px 30px;
+    }
+/* Design And Built Section End Here */
+
+/* Choose App Section Start Here */
+    .choose-app-section .section-heading h2{
+        font-size: 22px;
+        line-height: 24px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+    .choose-app-section .section-heading p{
+        text-align: center;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .choose-wrapper{
+        margin-top: 60px;
+    }
+    .choose-first-line, .choose-secound-line{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .choose-secound-line{
+        margin-top: 45px;
+    }
+    .choose-info h2{
+        font-size: 20px;
+        line-height: 58px;
+        color: var(--main-text-color);
+        font-weight: 600;
+        font-family: Poppins-Bold;
+        text-align: center;
+    }
+    .choose-info p{
+        font-size: 16px;
+        line-height: 26px;
+        color: #616368;
+        font-weight: 400;
+        font-family: Poppins;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .choose-wrapper .award-wrapper, .ux-wrapper{
+        margin: 20px 0;
+    }
+/* Choose App Section End Here */
+
+/* Ultimate Section Start Here */
+    .ultimate-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .ultimate-wrapper .ultimate-right-img img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .ultimate-left a{
+        padding: 10px 40px;
+    }
+    .ultimate-left .section-heading h2{
+        width: 100%;
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+    }
+    .ultimate-left .section-heading p{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .ultimate-feature-first-line, .ultimate-feature-secound-line{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .ultimate-feature-secound-line{
+        margin-bottom: 35px;
+    }
+    .ultimate-info h2{
+        font-size: 20px;
+        line-height: 58px;
+        color: var(--main-text-color);
+        font-weight: 600;
+        font-family: Poppins-Bold;
+    }
+    .ultimate-info p{
+        font-size: 16px;
+        line-height: 26px;
+        color: #616368;
+        font-weight: 400;
+        font-family: Poppins;
+        width: 100%;
+    }
+/* Ultimate Secton End Here */
+
+/* Price Section Start Here */
+    .price-section{
+        border-bottom: 2px solid #f7f7f7;
+    }
+    .price-section .section-heading{
+        text-align: center;
+    }
+    .price-section .section-heading h2{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    .price-section .section-heading p{
+        width: 100%;
+        margin: 0 auto;
+    }
+   
+    .tab{
+        width: 283px;
+        border-radius: 24px;
+        margin: 0 auto;
+        border: 2px solid var(--border-color);
+    }    
+    .tablinks{
+        width: 136px;
+        height: 48px;
+        border-radius: 24px;
+        color: var(--paragraph-text-color);
+        background-color: transparent;
+        font-weight: 500;
+        font-family: Poppins;
+        cursor: pointer;
+    }
+    .tab button.active {
+        padding: 5px 0;
+        color: var(--white-color);
+        background-color: var(--btn-bg-color);
+    }
+    .tabcontent {
+        display: none;
+        border-top: none;
+    }
+    .monthly-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 30px;
+    }
+    .price-container{
+        width: 100%;
+        height: 549px;
+        border-radius: 9px;
+        filter: drop-shadow(3.837px 54.866px 31px rgba(144,163,177,0.18));
+        background-color: #ffffff;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .tabcontent .secound{
+        height: 585px;
+        border-radius: 9px;
+        border: 2px solid var(--border-color);
+        filter: none;
+    }
+    .top-content{
+        height: 234px;
+        background: linear-gradient( white ,rgba(245, 247, 249, 0.9));
+        padding-top: 67px;
+    }
+    .top-content .price{
+        font-size: 60px;
+        line-height: 58px;
+        color: #242f51;
+        font-weight: 600;
+        font-family: Poppins-Bold;
+    }
+    .top-content .month{
+        font-size: 18px;
+        line-height: 28px;
+        color: #999ca5;
+        font-weight: 400;
+        font-family: Poppins;
+        text-align: center;
+    }
+    .top-content h3{
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--main-text-color);
+        font-weight: 600;
+        font-family: Poppins;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .top-content p{
+        font-size: 16px;
+        line-height: 28px;
+        color: #999ca5;
+        font-weight: 400;
+        font-family: Poppins;
+        text-align: center;
+    }
+    .bottom-content ul{
+        margin: 20px 0;
+    }
+    .bottom-content ul li{
+        list-style: none;
+        font-size: 16px;
+        line-height: 48px;
+        color: #999ca5;
+        font-weight: 400;
+        font-family: Poppins;
+        text-align: center;
+    }
+    .trial{
+        margin-top: 20px;
+    }
+    .trial a{
+        font-size: 16px;
+        line-height: 28px;
+        color: #2500f9;
+        font-weight: 400;
+        font-family: Poppins;
+        text-align: center;
+        
+    }                           
+/* Price Section End Here */
+
+/* Testimonial Start Here */
+    .testimonial-left img{
+        width: 100%;
+    }
+    .testimonial-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .testimonial-right-info .section-heading h2{
+        font-size: 28px;
+        line-height: 38px;
+        margin: 20px 0;
+    }
+    .testimonial-right-info .section-heading p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .comment .fa-star{
+        color: var(--star-color);
+        margin-top: 30px;
+    }
+    .comment h3{
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--main-text-color);
+        font-weight: 600;
+        font-family: Poppins-Bold;
+        margin: 20px 0;
+    }
+    .comment p{
+        font-size: 14px;
+        line-height: 24px;
+        color: #616368;
+        font-weight: 400;
+        font-family: Poppins;
+    }
+    .person{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .person-info{
+        padding-left: 10px;
+    }
+    .person-info h3{
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--main-text-color);
+        font-weight: 600;
+        font-family: Poppins-Bold;
+    }
+    .person-info p{
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--paragraph-text-color);
+        font-weight: 400;
+        font-family: Poppins;
+    }
+/* Testimonial End Here */
+
+/* FAQ Section Start Here */
+    .FAQ-section .section-heading{
+        text-align: center;
+    }
+    .FAQ-section .section-heading h2{
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    .FAQ-section .section-heading p{
+        width: 100%;
+        margin: 0 auto;
+    }
+/* FAQ Section End Here */
+
+/* Download Section Start Here */
+    .download-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .download-right-img img{
+        width: 100%;
+    }
+    .download-left-info h2{
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .download-left-info p{
+        margin: 20px 0 30px 0;
+    }
+    .download-left-info .goggle-play-app-store ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 20px;
+    }
+    .download-left-info .goggle-play-app-store ul li{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .download-left-info .goggle-play-app-store ul li a img{
+        width: 100px;
+    }
+/* Download Section End Here */
+
+/* Footer Section Start Here */
+    footer{
+        background-color: var(--footer-bg-color);
+        text-align: center;
+    }
+    footer .container{
+        padding: 60px 0;
+    }
+    .footer-nav-ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+    .footer-social-link-ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+    .footer-nav-ul li{
+        margin: 10px 10px 0 0;
+    }
+    .footer-nav-ul li a{
+        font-size: 14px;
+        line-height: 44px;
+        color: var(--white-color);
+        font-weight: 400;
+        font-family: Poppins;
+    }
+    .footer-social-link-ul li{
+        margin: 40px 30px 0 20px;
+    }
+    .footer-social-link-ul li a{
+        font-size: 30px;
+        letter-spacing: 23px;
+        line-height: 44px;
+        color:  var(--social-link-unhover);
+    }
+    .footer-social-link-ul li a:hover{
+        color: var(--white-color);
+       
+    }
+    .footer-copyright {
+        padding-top: 40px;
+    }
+    .copy-right-paragraph{
+        font-size: 14px;
+        line-height: 44px;
+        color: rgba(255, 255, 255, 0.2);
+        font-weight: 400;
+        font-family: Poppins;
+    }
+/* Footer Section End Here */
+
+
+
+
+
+/* All Devices Media Quries Start Here */
+    @media screen and (min-width:480px) {
+        .container{
+            width: 100%;
+            padding: 0px 20px;
+        }
+    }
+
+    @media screen and (min-width:576px) {
+        .container{
+            width: 100%;
+            padding: 0px 20px;
+        }
+        .price-container {
+            width: 357px;
+            margin: 0 auto 30px auto;
+        }
+        .choose-info p {
+            width: 343px;
+        }
+        .trust-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .trust-wrapper div {
+            margin: 20px 40px;
+        }
+        .feature-info p {
+            width: 330px;
+        }
+        .design-right-info h2 {
+            font-size: 36px;
+        }
+        .choose-app-section .section-heading h2 {
+            font-size: 36px;
+            line-height: 58px;
+        }
+        
+        .jackpot-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .jackpot-info p {
+            width: 257px;
+        }
+        .jackpot-section .section-heading p {
+            width: 520px;
+        }
+        .ultimate-info p {
+            width: 343px;
+            margin: 0 auto;
+        }
+        .monthly-wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+        .price-container {
+            width: 293px;
+        }
+        .download-wrapper {
+            flex-direction: row;
+        }
+        .feature {
+            flex-direction: row;
+            justify-content: center;
+        }
+        .ux-wrapper {
+            margin: 40px 0;
+        }
+    }
+
+    @media screen and (min-width:768.67px) {
+        .section{
+            padding: 60px 0 0 0;
+        }
+        .ux-wrapper {
+            margin: 0px 0;
+        }
+        .container{
+            width: 720px;
+            padding: 0px 20px;
+            margin: 0 auto;
+        }
+        header {
+            width: 100%;
+            min-height: auto;
+        }
+        .hero-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .hero-info .demo {
+            font-size: 16px;
+        }
+        .top-nav-links li{
+            margin: 0 10px 0 0;
+        }
+        .lg-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+        .top-nav-links{
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+        .strip-span {
+            width: 280px;
+        }
+        .hero-info .demo {
+            margin-left: 15px;
+        }
+        .trust-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .trust-wrapper div {
+            margin: 20px 20px;
+        }
+        .feature-main-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .feature-left-img img {
+            width: 70%;
+        }
+        .feature-right-info {
+            flex-basis: 50%;
+        }
+        .feature-right-info .section-heading h2, .feature-right-info .section-heading p {
+            text-align: left;
+            width: 307px;
+        }
+        .feature {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .feature-right-info .section-heading h2 , .feature-right-info .section-heading p {
+            text-align: left;
+        }
+        .feature-info h3 {
+            text-align: left;
+        }
+        .feature-info p {
+            width: 265px;
+            text-align: left;
+        }
+        .jackpot-section .section-heading .border-right{
+            border-right: none;
+        }
+        .jackpot-section .section-heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .jackpot-section .section-heading h2 {
+            font-size: 32px;
+            line-height: 40px;
+            width: 100%;
+            text-align: center;
+        }
+        .jackpot-section .section-heading p {
+            font-size: 16px;
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .jackpot-wrapper {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .jackpot{
+            text-align: center;
+        }
+        .jackpot-info p {
+            width: 263px;
+        }
+        .design-bulid-wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 40px;
+        }
+        .design-right-info {
+            text-align: left;
+            margin-left: 45px;
+        }
+        .design-left-img{
+            flex-basis: 50%;
+        }
+        .design-right-info h2 {
+            width: 360px;
+            text-align: left;
+            font-size: 36px;
+            line-height: 42px;
+        }
+        .design-right-info p{
+            text-align: left;
+        }
+        .choose-app-section .section-heading h2 {
+            font-size: 36px;
+            line-height: 40px;
+            width: 460px;
+        }
+        .choose-app-section .section-heading p {
+            width: 634px;
+        }
+       
+        .choose-first-line, .choose-secound-line {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-around;
+        }
+       
+        .choose-info p {
+            font-size: 14px;
+            width: 250px;
+        }
+        .ultimate-left .section-heading h2 {
+            font-size: 36px;
+            line-height: 42px;
+            text-align: left;
+            width: 400px;
+        }
+        .ultimate-left{
+            text-align: left;
+        }
+        .ultimate-left .section-heading p{
+            text-align: left;
+            width: 400px;
+        }
+        .ultimate-info p{
+            width: 300px;
+        }
+        .choose-wrapper .award-wrapper{
+            margin: 0px;
+        }
+        .ultimate-wrapper {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+        .ultimate-feature-first-line, .ultimate-feature-secound-line {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+        }
+        .price-section .section-heading h2 {
+            width: 567px;
+            font-size: 36px;
+        }
+        .price-container {
+            width: 317px;
+        }
+        .monthly-wrapper {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .download-wrapper {
+            flex-direction: row;
+        }
+        .footer-nav-ul, .footer-social-link-ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .footer-nav-ul, .footer-social-link-ul {
+            margin: 0 20px;
+        }
+        .testimonial-wrapper {
+            flex-direction: row;
+        }
+        .testimonial-left{
+            flex-basis: 50%;
+        }
+        .testimonial-right-info{
+            flex-basis: 50%;
+            text-align: left;
+        }
+        .person {
+            justify-content: flex-start;
+        }
+        .download-left-info h2 {
+            font-size: 36px;
+            line-height: 38px;
+            text-align: left;
+        }
+        .download-left-info p {
+            text-align: left;
+        }
+        .download-left-info .goggle-play-app-store ul {
+            justify-content: flex-start;
+        }
+        .download-left-info .goggle-play-app-store ul li {
+            margin-right: 20px;
+            margin-left: 0px;
+        }
+        .monthly-wrapper {
+            margin-top: 30px;
+            padding: 0 0px;
+        }
+    }
+
+    @media screen and (min-width:992px) {
+        .container{
+            width: 940px;
+            padding: 0px 20px;
+            margin: 0 auto;
+        }
+        .strip-span {
+            font-size: 18px;
+            line-height: 28px;
+            width: 350px;
+        }
+        .hero-info h2 {
+            font-size: 60px;
+            line-height: 75px;
+            width: 600px;
+        }
+        .hero-info p {
+            font-size: 18px;
+            line-height: 28px;
+            width: 480px;
+        }
+        .price-section .section-heading p {
+            width: 667px;
+        }
+        .ux-wrapper {
+            margin: 0;
+        }
+        .jackpot-section .section-heading {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .jackpot-section .section-heading h2 {
+            width: 350px;
+            text-align: left;
+            margin-right:0px;
+        }
+        .jackpot-section .section-heading p {
+            width: 400px;
+            text-align: left;
+        }
+        .jackpot-section .section-heading .border-right {
+            border-right: 1px solid  #cccac8;
+            padding-right: 50px;
+        }
+        .testimonial-right-info .section-heading h2 {
+            font-size: 40px;
+            line-height: 50px;
+            width: 513px;
+        }
+        .FAQ-section .section-heading h2 {
+            font-size: 40px;
+            line-height: 58px;
+        }
+        .FAQ-section .section-heading p {
+            width: 667px;
+        }
+        .monthly-wrapper {
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 0px 200px;
+            margin-top: 40px;
+        }
+        .border-right{
+            margin-right: 83px;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        .container{
+            width: 1180px;
+            padding: 0px 20px;
+            margin: 0 auto;
+        }
+        .jackpot-section .section-heading h2 {
+            width: 350px;
+            text-align: left;
+            margin-right: 100px;
+        }
+    }
+/* All Devices Media Quries End Here */
